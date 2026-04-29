@@ -1001,7 +1001,17 @@ padding-bottom: 20px;
     height: 65px;
 }
 .footer-section{
-    height: 400px;
+    height: 310px;
+}
+.footer-section .thanks{
+    font-size:12px;
+
+}
+.footer-section .rights{
+    font-size: 10px;
+}
+.footer-section .owner{
+    font-size: 15px;
 }
 }
 @media (max-width: 500px){
@@ -1060,7 +1070,7 @@ padding-bottom: 20px;
 }
 .footer-section{
     overflow: hidden;
-    height: 70vh;
+    height: 320px;
 }
 
 .featured-section{
