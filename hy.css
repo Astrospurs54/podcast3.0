@@ -5,7 +5,9 @@ html{
 
 /* song card css starts here*/
 
+/*section 3 css*/
 
+/*end of section 3 css*/
 .toggle-Btn{
     width: 50px;
     height: 50px;
@@ -59,12 +61,13 @@ html{
     }
 
     .song-card {
+    
+
       background: rgba(255,255,255,0.05);
       backdrop-filter: blur(10px);
       border-radius: 16px;
       overflow: hidden;
       width: 100%;
-     
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation:  appear both;
     animation-timeline: view(50% 10%);
@@ -93,14 +96,15 @@ html{
       width: 100%;
       overflow: hidden;
       aspect-ratio: 1 / 1;
-
+    
     }
 
     .artwork-container .artwork {
       width: 100%;
       height: 100%;
-      object-fit:fill;
+      object-fit:cover;
       display:block ;
+      aspect-ratio: 1 / 1;
 
     }
 
@@ -165,14 +169,81 @@ html{
     /* css for song card*/
 
 /* css for section 3 */
+.sec3{
+    width: 100dvw;
+
+    margin-top: 150px;
+    padding: 8px 4%;
+   
+       
+   
+
+}
+.gradient-container{
+    width: 100%;
+    height: 50dvh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    overflow: hidden;
+    margin-top: 50px;
+     box-shadow: 0 70px 100px rgba(0, 0, 0, 1);
+    
+   
+}
+.h1-container{
+    width:60%;  
+    height: 100%;
+    text-align: center;
+    background: #000;
+}
+.img-box-gradient{
+    width: 40%;
+    height: 100%;
+    right: 0px;
+    position: relative;
+    background:linear-gradient(90deg, #000 10%, #000000a8, #00000077, #00000000);
+}
+.gradient-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    position: absolute;
+    z-index: -1;
+  
+}
+ .sec3 .first{
+    margin-bottom:0px;
+
+ }
+.sec3 .second{
+    padding-top: 10px;
+}
+.sec3 .last{
+    margin-bottom:50px;
+}
+.sec3 .middle{
+    margin-bottom:0px;
+    padding-top: 10px;
+}
+.note{
+    text-align: center;
+
+}
+.note-info{
+    opacity: 60%;
+}
 .artist-container-sec3{
     width: 100%;
     height: 50%;
-   margin-top: 50px;
-  padding: 10px;
+    padding-top: 100px;
+    height: auto;
+    margin-bottom:200px ;
+ 
 }
 .song-card-sec3{
-    background: rgba(255,255,255,0.05);
+    background: rgba(0, 0, 0, 0.712);
       backdrop-filter: blur(10px);
       border-radius: 16px;
       overflow: hidden;
@@ -337,7 +408,7 @@ text-shadow:0 0 20px hsl(0,0%,20%);
 body{
     background-image:url(assets/bgcool.jpg);
     background-repeat:no-repeat;
-    background-attachment:scroll;
+    background-attachment:fixed;
     background-size:100% 100%; 
     width: 100%;
     height: 100%;
@@ -683,6 +754,7 @@ footer{
     padding: 15px;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
+   
 }
 .footer{
     justify-content: center;
@@ -843,7 +915,38 @@ p.owner{
     background: #000000c9;
     backdrop-filter: blur(30px);
 }
-    
+.gradient-container{
+    height: 300px;
+
+}
+.h1-container{
+    width: 50%;
+}
+.img-box-gradient{
+    width: 50%;
+}
+.artist-sec3{
+    font-size: 40px;
+}
+.note-info{
+    font-size: 15px;
+}
+ .song-card-sec3{
+        max-width: 230px;
+        height: 100px;
+
+      }
+     .artwork-container{
+    height: 100%;
+
+   }
+   .artwork-container-sec3{
+    height:100px;
+    width: 130px;
+   }
+   .song-title{
+    font-size: 13px;
+   }
     
 
 }
@@ -922,8 +1025,8 @@ p.owner{
       .artist-container-sec3{
     width: 100%;
     height: 100%;
-   margin-top: 20px;
-  padding: 10px;
+   margin-top: px;
+  padding: 5px;
 }
 .footer-section{
     height: 56vh;
@@ -1013,6 +1116,35 @@ padding-bottom: 20px;
 .footer-section .owner{
     font-size: 15px;
 }
+.gradient-container{
+    height:500px;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+.h1-container{
+    width: 100%;
+    height: 300px;
+   
+    
+}
+.artist-sec3{
+    padding: 15%;
+}
+.img-box-gradient{
+    width: 100%;
+  background:linear-gradient(180deg, #000000f1 10%, #000000a8 , #00000077 , #f7f7f700);
+  height: 400px;
+}
+.gradient-img{
+    aspect-ratio: 9 / 16;
+}
+
+
+
+
+
+
 }
 @media (max-width: 500px){
     .featured-grid{  
@@ -1068,6 +1200,13 @@ padding-bottom: 20px;
 .song-info-sec3{
     width: 110px;
 }
+.artwork-container-sec3{
+    height: 100%;
+}
+.artwork-sec3{
+    aspect-ratio: 2 / 2;
+    object-fit: cover;
+}
 .footer-section{
     overflow: hidden;
     height: 320px;
@@ -1119,6 +1258,13 @@ padding-bottom: 20px;
         right: 5rem;
         top: 1rem;
     }
+    .artwork-container-sec3{
+    height: 100%;
+}
+.artwork-sec3{
+    aspect-ratio: 2 / 2;
+    object-fit: cover;
+}
    
 
 
