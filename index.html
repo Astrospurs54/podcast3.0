@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro's podcast</title>
     <link rel="stylesheet" href="hy.css" type="text/css">
+    <script src="script.js" defer></script>
    
     
 </head>
@@ -50,13 +51,66 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 </div>
+
+<template data-result-template>
+ 
+  <div class="result">
+    <div class="result-artist" data-result-artist></div>
+    <div class="result-song" data-result-song></div>
+  </div>
+
+</template>
+<!--testing ends here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div>
      <h1 class="hy">ASTRO'S <span class="podcast">PODCAST</span> </h1>
 </div>
 <div class="W-box">
      <h2 class="Welcome"><span class="W-text">Welcome  </span> to the <span class="podcast">Land of Amapiano</span>, find the best recommended amapiano's of the year. Recommended by the one and only <span class="podcast">Astrospurs54 .</span></h2>
-</div>   
+     <div class="search-block">
+         <div class="search-wrapper">
+             <div class="search-header">
+                 <span>Search songs</span>
+                 <p class="search-hint">Find artist or title with instant results</p>
+             </div>
+             <div class="search-field">
+                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="search-icon">
+                     <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                 </svg>
+                 <input type="search" id="search" data-search placeholder="Search songs or artists">
+             </div>
+         </div>
+         <div class="result-card" data-result-card-container></div>
+     </div>
+</div>
 
     <div class="recommended-artists">
       <h1 class="recommended-artists-h1"> Recommended Artists</h1>
@@ -141,9 +195,9 @@
 
      <audio src="assets/rec music/recomend/Babalwa M - Amaphutha.mp3" class="song-audio" id="song-audio"></audio>
         <div class="artwork-container">
-          <img src="assets/pics/recomend/babalwa2.png" clss="artwork">
+          <img src="assets/pics/recomend/babalwa2.png" clss="artwork" >
           <button class="play-button" id="play-button">
-           <div class="play-Icon" id="play-Icon">▶</div>
+           <div class="play-Icon" id="play-Icon">▶</div >
           </button>
         </div>
         <div class="song-info">        
@@ -1029,9 +1083,9 @@
         </div>  
 </div>
  
-<div class="artist-container-sec3">
+<div class="artist-container-sec3 first">
    
-    <div class="scroll-music last">
+    <div class="scroll-music ">
   <!--song cards for kabza de small-->       
       <div class="song-card-sec3">
 
@@ -1265,13 +1319,248 @@
 
 
       <!--adding kabza songs should not pass here-->
-    </div>
-       <div class="note">
-        <h3 class="note-info">For more songs please scroll towards the <span class="podcast">right</span> ---> </h3>
-    </div>
+   
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- artist song container second for kabza-->
+<div class="artist-container-sec3 second">
+   
+    <div class="scroll-music last">
+  <!--song cards for kabza de small-->       
+      <div class="song-card-sec3">
+
+     <audio src="assets/rec music/KABZA/2/Kabza_De_Small_Ngyozama_feat_Sykes,_Young_Stunna,_Nkosazana.mp3"class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/babmotha.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Ngyozama</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+  <!--second song card ya kabza-->
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/KABZA/2/Kabza De Small - Iphupho (feat. Thatohatsi).mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/babmotha.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Iphupho</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--third song-->
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/KABZA/2/Kabza De Small - Isthombe (feat. Mthunzi   Young Stunna).mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/babmotha.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Isthombe</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--4th song-->
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/KABZA/2/Kabza De Small - Izimbali (feat. Thatohatsi   Murumba Pitch).mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/babmotha.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Izimbali</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--5th song-->
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/KABZA/2/Kabza De Small - Sondela (feat. Ami Faku   Mhaw Keys).mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/koa.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Sondela</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--6th song-->
+
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/KABZA/2/Kabza De Small - Interlude.mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/babmotha.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Interlude</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--7th song-->
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/KABZA/2/Kabza_De_Small_Kabza_Chant_2_0_feat_Nobuhle,_Nkosazana_Daugh.mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/babmotha.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Kabza Chant 2.0</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--8th song-->
+
+
+  
+
+
+<!--here to add more songs-->
+
+
+ </div>
+       <div class="note">
+        <h3 class="note-info">For more songs please scroll towards the <span class="podcast">right</span> ---> </h3>
+    </div>
+
+
+
+</div>
+<!--kabza ends here-->
 
 
 
@@ -1936,8 +2225,185 @@
 
       
 </div>
+
+
+
+
+
+<!--reandra vert -->
     
 
+
+
+
+
+
+<div class="gradient-container">
+        <div class="h1-container">
+            <h1 class="artist-sec3">Reandra Vert</h1> 
+        </div> 
+        <div class="img-box-gradient">
+                <img class="gradient-img" src="assets/pics/artist/" alt="vert">
+        </div>  
+</div>
+ 
+<div class="artist-container-sec3 first">
+   
+    <div class="scroll-music last">
+  <!--song cards for Reandra-->
+
+      <div class="song-card-sec3">
+
+     <audio src="assets/rec music/VERT/Leandra.Vert - Ratata.mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/RATATA.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Ratata</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+  <!--second song card -->
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/VERT/Leandra.Vert - Asiyeke.mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/ASIYEKE.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Asiyeke</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--third song-->
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/VERT/Leandra.Vert - In Too Deep.mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/DEEP.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">In Too Deep</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--4th song-->
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/VERT/Leandra.Vert - Ngisasemncane.mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/NGISASEMCANE.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Ngisasemncane</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--5th song-->
+
+
+  <div class="song-card-sec3">
+
+     <audio src="assets/rec music/VERT/Leandra.Vert - Tse Monate (feat. Mustbedubz).mp3" class="song-audio-sec3" id="song-audio-sec3"></audio>
+        <div class="artwork-container-sec3">
+          <img src="assets/pics/sec3/TSE.png" class="artwork-sec3">
+          <button class="play-button-sec3" id="play-button-sec3">
+           <div class="play-Icon-sec3" id="play-Icon-sec3">▶</div>
+          </button>
+        </div>
+        <div class="song-info-sec3">        
+                <h3 class="song-title">Tse Monate</h3>
+                <p class="artist"></p>
+
+          <!--Progress bar-->
+          <div class="progress-container-sec3">
+              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display-sec3">
+                <span class="current-time-sec3">0:00</span>
+                <span class="duration-sec3">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--6th song-->
+
+
+
+
+      <!--adding song cards should not pass here-->
+    </div>
+      <div class="note">
+        <h3 class="note-info">For more songs please scroll towards the <span class="podcast">right</span> ---> </h3>
+    </div>
+</div>
 
 
 

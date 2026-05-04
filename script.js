@@ -1,0 +1,58 @@
+const resultTemplate = document.querySelector("[data-result-template]")
+const resultCardContainer = document.querySelector("[data-result-card-container]")
+const searchInput = document.querySelector("[data-search]")
+
+
+let results = []
+
+searchInput.addEventListener("input", (e) => {
+    const value = e.target.value.trim().toLowerCase()
+
+    if (!value) {
+        results.forEach(result => {
+            result.element.style.display = "none"
+        })
+        return
+    }
+
+    results.forEach(result => {
+        const isVisible = result.artist.toLowerCase().includes(value) || result.song.toLowerCase().includes(value)
+        result.element.style.display = isVisible ? "block" : "none"
+    })
+})
+
+
+
+fetch("search-data.json")
+    .then(res => res.json())
+    .then(data => {
+        results = data.map(result => {
+            const resultElement = resultTemplate.content.cloneNode(true).children[0]
+            const artistContainer = resultElement.querySelector("[data-result-artist]")
+            const songContainer = resultElement.querySelector("[data-result-song]")
+
+            const artistLink = document.createElement("a")
+            artistLink.textContent = result["result-artist"]
+            if (result["artist-url"]) {
+                artistLink.href = result["artist-url"]
+            }
+            artistContainer.append(artistLink)
+
+            const songLink = document.createElement("a")
+            songLink.textContent = result["result-song"]
+            if (result["song-url"]) {
+                songLink.href = result["song-url"]
+            }
+            songContainer.append(songLink)
+
+            resultElement.style.display = "none"
+            resultCardContainer.append(resultElement)
+            return {
+                artist: result["result-artist"],
+                song: result["result-song"],
+                element: resultElement
+            }
+        })
+    })
+
+

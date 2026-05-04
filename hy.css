@@ -3,11 +3,159 @@ html{
     scroll-behavior:smooth;
 }
 
+.hero-section {
+    position: relative;
+}
+
 /* song card css starts here*/
 
-/*section 3 css*/
+/*search css here*/
+.search-wrapper{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    max-width: 430px;
+    display: grid;
+    gap: .75rem;
+    padding: 1.25rem;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(22px);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18);
+}
+.search-block{
+    display: grid;
+    gap: .8rem;
+    width: 100%;
+    max-width: 430px;
+    margin-left: auto;
+}
+.search-header{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.search-header span{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: #f8f8ff;
+}
+.search-hint{
+    margin: 0;
+    font-size: .8rem;
+    color: rgba(255,255,255,0.75);
+    opacity: .85;
+}
+.search-field{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    width: 100%;
+    padding: .9rem 1rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+}
+.search-field:hover,
+.search-field:focus-within{
+    border-color: rgba(0,255,255,0.45);
+    box-shadow: 0 0 0 1px rgba(0,255,255,0.12);
+}
+.search-icon{
+    width: 1.35rem;
+    height: 1.35rem;
+    color: rgba(255,255,255,0.7);
+    flex-shrink: 0;
+}
+.search-wrapper input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: .01em;
+}
+.search-wrapper input::placeholder{
+    color: rgba(255,255,255,0.65);
+    opacity: 1;
+     font-size: 13px;
+    padding: 10px;
+    color: #c9c9c9;
+    opacity: 60%;
+}
 
-/*end of section 3 css*/
+
+.result{
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(18px);
+    padding: 1rem 1rem .9rem;
+    width: 100%;
+    display: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.result.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.W-box .result .result-artist{
+    margin-bottom: .5rem;
+    font-size: .3rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #f4f4ff;
+}
+.W-box .result .result-song{
+    font-size: .2rem;
+    line-height: 1;
+    color: rgba(177, 177, 177, 0.541);
+    opacity: .85;
+}
+.hide{
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .W-box{
+        width: 90vw;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        margin: 3% auto 5%;
+    }
+    .W-text{
+        max-width: calc(100% - 460px);
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .search-block{
+        margin: 0;
+    }
+    .search-wrapper{
+        margin: 0;
+    }
+    .result-card{
+        margin-top: .1rem;
+        width: 100%;
+        max-width: 200px;
+        padding: 0px;
+        height: 90px;
+    }
+    .result{
+        margin-bottom: 7px;
+    }
+}
+
+
+
+
+/*css for search bar ends here*/
 .toggle-Btn{
     width: 50px;
     height: 50px;
@@ -203,6 +351,7 @@ html{
     right: 0px;
     position: relative;
     background:linear-gradient(90deg, #000 10%, #000000a8, #00000077, #00000000);
+    overflow: hidden;
 }
 .gradient-img{
     width: 100%;
@@ -231,6 +380,7 @@ html{
     text-align: center;
 
 }
+
 .note-info{
     opacity: 60%;
 }
@@ -654,15 +804,14 @@ li,a,button{
      
 }
 .W-box{
-
-    width: 45%;
-    height: 170px;
-    margin-right:auto;
-    margin-left: 7%;
-    margin-top:2%;
-    margin-bottom: 5%;
-   
-    
+    width:100%;
+    margin:  0 auto;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 .W-text{
     font-size: 35px;
@@ -748,7 +897,7 @@ footer{
 }
 
     .footer-section{
-    height:50vh;
+    height:55vh;
     width: 100%;
     margin-top: 12%;
     padding: 15px;
@@ -838,20 +987,69 @@ p.owner{
         .hy{
             font-size: 70px;
         }
-        .W-box{
-            width: 600px;
-        }
         .recommended-artists{
             font-size: 25px;
         }
 }
+
+@media (min-width: 992px) {
+    .W-box{
+        width: 90vw;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        margin: 3% auto 5%;
+    }
+    .W-text{
+        max-width: calc(100% - 470px);
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .search-block{
+        margin: 0;
+        width: min(430px, 40%);
+    }
+    .search-wrapper{
+        width: 100%;
+        max-width: 350px;
+    }
+    .result-card{
+        width: 100%;
+        max-width: 430px;
+    
+    }
+}
+
 @media (max-width:992px) {
      .toggle-Btn{
         display: none;
      }
       
       .W-box{
-        width: 500px;
+        width: 95%;
+        display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .search-wrapper{
+        position: static;
+        margin: 2rem auto 1rem;
+        width: calc(100% - 2rem);
+        box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+    }
+    .result-card{
+        width: calc(100% - 10rem);
+        height: 30px;
+    }
+    .result{
+        margin-bottom: 7px;
+    }
+      .search-block{
+        margin: 1.5rem auto 0;
+        gap: .1rem;
+        padding: 20px;
       }
  
       .weblink:hover {
@@ -937,7 +1135,7 @@ p.owner{
 
       }
      .artwork-container{
-    height: 100%;
+    height: 60%;
 
    }
    .artwork-container-sec3{
@@ -997,10 +1195,13 @@ p.owner{
      backdrop-filter: blur(100px);
     }
       .W-box{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
-        
-       
+        padding-right: 0;
+        display: block;
+      }
+      .search-block{
+        margin: 1.5rem auto 0;
       }
       .Welcome{
         font-size: 20px;
@@ -1025,7 +1226,7 @@ p.owner{
       .artist-container-sec3{
     width: 100%;
     height: 100%;
-   margin-top: px;
+   margin-top: 0px;
   padding: 5px;
 }
 .footer-section{
@@ -1036,7 +1237,7 @@ p.owner{
    .toggle-Btn{
      width: 35px;
     height: 35px;
-    right: 2rem;
+    right:2rem;
     top: 2rem;
    }
  .dropdown-menu.open {
@@ -1054,6 +1255,10 @@ p.owner{
    .song-card{
     max-width:100%;
     
+   }
+   .song-card-sec3{
+      max-width: 205px;
+    height: 90px;
    }
    .artwork-container{
     height: 130px;
@@ -1138,10 +1343,40 @@ padding-bottom: 20px;
 }
 .gradient-img{
     aspect-ratio: 9 / 16;
+}.play-button-sec3{
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background:linear-gradient(180deg, #000000f1 10%, #000000a8 , #00000081 , #f7f7f700);
+
+}
+.artwork-container-sec3{
+    height: 100%;
+    width: 45%;
+
+
 }
 
 
-
+.search-wrapper{
+        top: auto;
+        right: auto;
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+    .search-header span{
+        font-size: .95rem;
+    }
+    .search-hint{
+        font-size: .75rem;
+    }
+    .search-field{
+        padding: .8rem .95rem;
+    }
+    .search-wrapper input{
+        font-size: .95rem;
+    }
 
 
 
@@ -1156,72 +1391,25 @@ padding-bottom: 20px;
         flex: 0 0 50%;
           padding: 5px;
       }
-}
-@media (max-width: 400px) {
-    .logo-box{
-        margin-bottom: 40px;
-    }
-    .W-box{
-        width: 80%;
-    }
-    .box{
-        aspect-ratio: 1 / 2;
-        flex: 0 0 50%;
-        padding: 5px;
+      .gradient-container{
+        height: 300px;
       }
-       .hy{
-        font-size: 35px;
-           }
-           .artwork-container{
-    height: 110px;
-}
-.song-card{
-    max-width: 170px;
-}.play-button{
-    top: 65px;
-    left: 60px;
-    height: 35px;
-}
-.artist-sec3{
-    font-size: 30px ;
-    margin-bottom: 40px;
-    margin-top: 60px;
-    padding: 10px;
-}
-.song-title{
-    font-size: 15px;
-}
-.artist{
-    font-size: 13px;
-}
-.song-card-sec3{
-    max-width: 195px;
-}
-.song-info-sec3{
-    width: 110px;
-}
-.artwork-container-sec3{
-    height: 100%;
-}
-.artwork-sec3{
-    aspect-ratio: 2 / 2;
-    object-fit: cover;
-}
-.footer-section{
-    overflow: hidden;
-    height: 320px;
+      .artist-sec3{
+        width: 100%;
+        padding: 20px;
+      }
+      .gradient-img{
+        
+
+      }
+      .img-box-gradient{
+        aspect-ratio: 16 / 9;
+          background:linear-gradient(180deg, #000000ef 10%, #000000c9 , #0000009f , transparent);
+          overflow: hidden;
+
+      }
 }
 
-.featured-section{
-    padding: 10px;
-}
-.featured-grid{
-    
-
-    padding: 0px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-}
 @media (max-width: 400px) {
     .hy{
         font-size: 30px;
@@ -1237,7 +1425,19 @@ padding-bottom: 20px;
         
     }
     .W-box{
-        height: 100px;
+        height: auto;
+        width: 90%;
+        padding: 0;
+    }
+    .search-block,
+    .search-wrapper,
+    .result-card{
+        width: calc(100% - 1.5rem);
+        max-width: 100%;
+        margin: 1rem auto 0;
+    }
+    .search-wrapper{
+        padding: 1rem;
     }
     .recommended-artists{
         font-size: 13px;
@@ -1261,11 +1461,78 @@ padding-bottom: 20px;
     .artwork-container-sec3{
     height: 100%;
 }
+
+    .logo-box{
+        margin-bottom: 40px;
+    }
+   
+    .box{
+        aspect-ratio: 1 / 2;
+        flex: 0 0 50%;
+        padding: 5px;
+      }
+
+    .artwork-container{
+    height: 110px;
+    }
+    .play-button-sec3{
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        background:linear-gradient(180deg, #000000f1 10%, #000000a8 , #00000081 , #f7f7f700);
+
+    }
+.song-card{
+    max-width: 170px;
+}.play-button{
+    top: 65px;
+    left: 60px;
+    height: 35px;
+}
+.artist-sec3{
+    font-size: 25px ;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    padding: 10px;
+}
+.song-title{
+    font-size: 13px;
+}
+.artist{
+    font-size: 13px;
+}
+.song-card-sec3{
+    max-width: 195px;
+    height: 80px;
+}
+.song-info-sec3{
+    width: 170px;
+}
+.artwork-container-sec3{
+    height: 100%;
+    width: 45%;
+
+
+}
 .artwork-sec3{
-    aspect-ratio: 2 / 2;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
-   
+.footer-section{
+    overflow: hidden;
+    height: 320px;
+}
+
+.featured-section{
+    padding: 10px;
+}
+.featured-grid{
+    
+
+    padding: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
 
 
 }
