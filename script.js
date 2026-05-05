@@ -3,6 +3,7 @@ const resultCardContainer = document.querySelector("[data-result-card-container]
 const searchInput = document.querySelector("[data-search]")
 
 
+
 let results = []
 
 searchInput.addEventListener("input", (e) => {
@@ -19,7 +20,16 @@ searchInput.addEventListener("input", (e) => {
         const isVisible = result.artist.toLowerCase().includes(value) || result.song.toLowerCase().includes(value)
         result.element.style.display = isVisible ? "block" : "none"
     })
+
+    // Check if any results are visible and show/hide the container accordingly
+    const hasVisibleResults = results.some(result => result.element.style.display === "block")
+    resultCardContainer.style.display = hasVisibleResults ? "block" : "none"
+
 })
+ 
+
+    
+
 
 
 
@@ -35,6 +45,7 @@ fetch("search-data.json")
             artistLink.textContent = result["result-artist"]
             if (result["artist-url"]) {
                 artistLink.href = result["artist-url"]
+               
             }
             artistContainer.append(artistLink)
 
@@ -42,6 +53,15 @@ fetch("search-data.json")
             songLink.textContent = result["result-song"]
             if (result["song-url"]) {
                 songLink.href = result["song-url"]
+                songLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(result["song-url"]);
+                    if (target) {
+                        target.scrollIntoView({block: 'center'});
+                        target.classList.add('highlight');
+                        setTimeout(() => target.classList.remove('highlight'), 3000);
+                    }
+                });
             }
             songContainer.append(songLink)
 
@@ -53,6 +73,8 @@ fetch("search-data.json")
                 element: resultElement
             }
         })
+        // Initially hide the container since no search has been performed
+        resultCardContainer.style.display = "none"
     })
 
 

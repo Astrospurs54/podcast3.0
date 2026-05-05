@@ -2,19 +2,473 @@
 {
     "id" : 1,
     "result-artist":" Mas Musiq ",
-    "artist-url": "https://www.youtube.com/watch?v=9n8sXo2l3j0",
-    "result-song" :"Abafana"
+    "artist-url": "#mas",
+    "song-url": "#phanisha",
+    "result-song" :"Phanisha"
 },
 
 {
     "id " : 2,
     "result-artist" :" Babalwa M",
+     "artist-url": "#Babalwa M",
+     "song-url": "#Amaphutha",
     "result-song" :"Amaphutha"
+    
 },
 {
-    "id " : 3,
-    "result-artist" :" Babalwa M",
-    "result-song" :"Piki piki"
+    "id" : 3,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Ingane-Yomuntu",
+    "result-song" :"Ingane Yomuntu"
+},
+{
+    "id" : 4,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Ubuhle-Bakho",
+    "result-song" :"Ubuhle Bakho"
+},
+{
+    "id" : 5,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Abafana",
+    "result-song" :"Abafana"
+},
+{
+    "id" : 6,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Anginandaba-Nabo",
+    "result-song" :"Anginandaba Nabo"
+},
+{
+    "id" : 7,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Lane-Yam",
+    "result-song" :"Lane Yam"
+},
+{
+    "id" : 8,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Yes-Sir",
+    "result-song" :"Yes Sir"
+},
+{
+    "id" : 9,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Groovy",
+    "result-song" :"Groovy"
+},
+{
+    "id" : 10,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Mali-Ye-Phepha",
+    "result-song" :"Mali Ye Phepha"
+},
+{
+    "id" : 11,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#phanisha",
+    "result-song" :"Phanisha"
+},
+{
+    "id" : 12,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Jikeleza",
+    "result-song" :"Jikeleza"
+},
+{
+    "id" : 13,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Nini-Nanini",
+    "result-song" :"Nini-Nanini"
+},
+{
+    "id" : 14,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Gangnam-Style",
+    "result-song" :"Gangnam Style"
+},
+{
+    "id" : 15,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Nguye-Lo",
+    "result-song" :"Nguye Lo"
+},
+{
+    "id" : 16,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Nanini",
+    "result-song" :"Nanini"
+},
+{
+    "id" : 17,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Ekhaya",
+    "result-song" :"Ekhaya"
+},
+{
+    "id" : 18,
+    "result-artist":" Mas Musiq ",
+    "artist-url": "#mas",
+    "song-url": "#Ama-Wishi-Wishi",
+    "result-song" :"Ama Wishi Wishi"
+},
+{
+    "id" : 19,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Sponono",
+    "result-song" :"Sponono"
+},
+{
+    "id" : 20,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Abuyile-Amakhosi",
+    "result-song" :"Abuyile Amakhosi"
+},
+{
+    "id" : 21,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Nana-Thula",
+    "result-song" :"Nana Thula"
+},
+{
+    "id" : 22,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Nia-Lo",
+    "result-song" :"Nia Lo"
+},
+{
+    "id" : 23,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Wena",
+    "result-song" :"Wena"
+},
+{
+    "id" : 24,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Qoqoqo",
+    "result-song" :"Qoqoqo"
+},
+{
+    "id" : 25,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Lorch",
+    "result-song" :"Lorch"
+},
+{
+    "id" : 26,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Kabza-Chant",
+    "result-song" :"Kabza Chant"
+},
+{
+    "id" : 27,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Ngyozama",
+    "result-song" :"Ngyozama"
+},
+{
+    "id" : 28,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Iphupho",
+    "result-song" :"Iphupho"
+},
+{
+    "id" : 29,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Isthombe",
+    "result-song" :"Isthombe"
+},
+{
+    "id" : 30,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Izimbali",
+    "result-song" :"Izimbali"
+},
+{
+    "id" : 31,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Sondela",
+    "result-song" :"Sondela"
+},
+{
+    "id" : 32,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Interlude",
+    "result-song" :"Interlude"
+},
+{
+    "id" : 33,
+    "result-artist":" Kabza De Small ",
+    "artist-url": "#Kabza De Small",
+    "song-url": "#Kabza-Chant-2",
+    "result-song" :"Kabza Chant 2.0"
+},
+{
+    "id" : 34,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#10K-Yey-nkomo",
+    "result-song" :"10K Yey nkomo"
+},
+{
+    "id" : 35,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Amabhoza",
+    "result-song" :"Amabhoza"
+},
+{
+    "id" : 36,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Billiato",
+    "result-song" :"Billiato"
+},
+{
+    "id" : 37,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Gaze",
+    "result-song" :"Gaze"
+},
+{
+    "id" : 38,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Esgela",
+    "result-song" :"Esgela"
+},
+{
+    "id" : 39,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Mukutsuri",
+    "result-song" :"Mukutsuri"
+},
+{
+    "id" : 40,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Z-yakhala",
+    "result-song" :"Z yakhala"
+},
+{
+    "id" : 41,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Vumile",
+    "result-song" :"Vumile"
+},
+{
+    "id" : 42,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Bayabalwa",
+    "result-song" :"Bayabalwa"
+},
+{
+    "id" : 43,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#iXesha",
+    "result-song" :"iXesha"
+},
+{
+    "id" : 44,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Lyf-Styl",
+    "result-song" :"Lyf Styl"
+},
+{
+    "id" : 45,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Yimi-Lo",
+    "result-song" :"Yimi Lo"
+},
+{
+    "id" : 46,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Muhle",
+    "result-song" :"Muhle"
+},
+{
+    "id" : 47,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Olwangempela",
+    "result-song" :"Olwangempela"
+},
+{
+    "id" : 48,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Risasekile",
+    "result-song" :"Risasekile"
+},
+{
+    "id" : 49,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Lyf-Styl-(live)",
+    "result-song" :"Lyf Styl (live)"
+},
+{
+    "id" : 50,
+    "result-artist":" Aymos ",
+    "artist-url": "#Aymos",
+    "song-url": "#Mama",
+    "result-song" :"Mama"
+},
+{
+    "id" : 51,
+    "result-artist":" Bassie ",
+    "artist-url": "#Bassie",
+    "song-url": "#Izenzo",
+    "result-song" :"Izenzo"
+},
+{
+    "id" : 52,
+    "result-artist":" Emotionz DJ ",
+    "artist-url": "#Emotionz DJ",
+    "song-url": "#Ama-pentshisi",
+    "result-song" :"Ama pentshisi"
+},
+{
+    "id" : 53,
+    "result-artist":" Leandra.Vert ",
+    "artist-url": "#Leandra.Vert",
+    "song-url": "#Ratata",
+    "result-song" :"Ratata"
+},
+{
+    "id" : 54,
+    "result-artist":" Leandra.Vert ",
+    "artist-url": "#Leandra.Vert",
+    "song-url": "#Asiyeke",
+    "result-song" :"Asiyeke"
+},
+{
+    "id" : 55,
+    "result-artist":" Leandra.Vert ",
+    "artist-url": "#Leandra.Vert",
+    "song-url": "#In-Too-Deep",
+    "result-song" :"In Too Deep"
+},
+{
+    "id" : 56,
+    "result-artist":" Leandra.Vert ",
+    "artist-url": "#Leandra.Vert",
+    "song-url": "#Ngisasemncane",
+    "result-song" :"Ngisasemncane"
+},
+{
+    "id" : 57,
+    "result-artist":" Leandra.Vert ",
+    "artist-url": "#Leandra.Vert",
+    "song-url": "#Tse-Monate",
+    "result-song" :"Tse Monate"
+},
+{
+    "id" : 58,
+    "result-artist":" Babalwa M ",
+    "artist-url": "#Babalwa M",
+    "song-url": "#Piki-Piki",
+    "result-song" :"Piki Piki"
+},
+{
+    "id" : 59,
+    "result-artist":" Lastborn ",
+    "artist-url": "#Lastborn",
+    "song-url": "#Yonkeinto",
+    "result-song" :"Yonkeinto"
+},
+{
+    "id" : 60,
+    "result-artist":" Sam deep ",
+    "artist-url": "#Sam deep",
+    "song-url": "#Hamba",
+    "result-song" :"Hamba"
+},
+{
+    "id" : 61,
+    "result-artist":" Shaunmusiq ",
+    "artist-url": "#Shaunmusiq",
+    "song-url": "#NKOSI",
+    "result-song" :"NKOSI"
+},
+{
+    "id" : 62,
+    "result-artist":" XDUPPY ",
+    "artist-url": "#XDUPPY",
+    "song-url": "#Bangbonile",
+    "result-song" :"Bangbonile"
+},
+{
+    "id" : 63,
+    "result-artist":" Mr JazziQ ",
+    "artist-url": "#Mr JazziQ",
+    "song-url": "#Ningalali-Emakhaya",
+    "result-song" :"Ningalali Emakhaya"
+},
+{
+    "id" : 64,
+    "result-artist":" Mordecai ",
+    "artist-url": "#Mordecai",
+    "song-url": "#Ngiya-Gowa",
+    "result-song" :"Ngiya Gowa"
+},
+{
+    "id" : 65,
+    "result-artist":" Priddy K ",
+    "artist-url": "#Priddy K",
+    "song-url": "#Ngingowakho",
+    "result-song" :"Ngingowakho"
+},
+{
+    "id" : 66,
+    "result-artist":" Blxckie ",
+    "artist-url": "#Blxckie",
+    "song-url": "#U-must-neva",
+    "result-song" :"U must neva"
+},
+{
+    "id" : 67,
+    "result-artist":" Dj veek ",
+    "artist-url": "#Dj veek",
+    "song-url": "#Nginenkinga",
+    "result-song" :"Nginenkinga"
 }
 
 

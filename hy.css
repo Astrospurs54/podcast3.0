@@ -89,10 +89,10 @@ html{
 
 
 .result{
-    border-radius: 18px;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.18);
-    backdrop-filter: blur(18px);
+
+
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    height: 80px;
     padding: 1rem 1rem .9rem;
     width: 100%;
     display: none;
@@ -102,22 +102,46 @@ html{
     transform: translateY(0);
     opacity: 1;
 }
-.W-box .result .result-artist{
+.result-artist{
     margin-bottom: .5rem;
-    font-size: .3rem;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.01em;
-    color: #f4f4ff;
+    color: #6e6e70;
+    opacity: 50%;
 }
-.W-box .result .result-song{
-    font-size: .2rem;
+.result-song{
+    margin-bottom: .5rem;
+    font-size: .3rem;
     line-height: 1;
-    color: rgba(177, 177, 177, 0.541);
-    opacity: .85;
+    color: rgb(255, 255, 255);
+    
+
 }
 .hide{
     display: none;
 }
+  .result-card{
+        margin-top: .1rem;
+        width: 100%;
+        max-width: 200px;
+        padding: 0px;
+        height:200px;
+        border-radius: 20px;
+        overflow-x: hidden;
+        background: rgba(255,255,255,0.05);
+         backdrop-filter: blur(18px);
+    }
+    .result-card::-webkit-scrollbar{
+        width: thin;
+        background: rgba(255,255,255,0.05);
+    }
+    .result-card::-webkit-scrollbar-thumb{
+        background-color: #00ffff5d;
+        border-radius: 20px;
+        width: thin;
+    }
+
 
 @media (min-width: 992px) {
     .W-box{
@@ -140,13 +164,7 @@ html{
     .search-wrapper{
         margin: 0;
     }
-    .result-card{
-        margin-top: .1rem;
-        width: 100%;
-        max-width: 200px;
-        padding: 0px;
-        height: 90px;
-    }
+   
     .result{
         margin-bottom: 7px;
     }
@@ -571,6 +589,11 @@ body{
   
 
     
+}
+.highlight {
+    border: 1px solid #00ffff4b !important;
+    box-shadow: 0 0 30px #00ffff4b !important;
+    transition: all 0.3s ease;
 }
 .dropdown-menu{
     display: none;
@@ -1040,8 +1063,10 @@ p.owner{
         box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
     }
     .result-card{
-        width: calc(100% - 10rem);
-        height: 30px;
+        max-width: 300px;
+        height: 200px;
+        display: none;
+        
     }
     .result{
         margin-bottom: 7px;
@@ -1050,6 +1075,7 @@ p.owner{
         margin: 1.5rem auto 0;
         gap: .1rem;
         padding: 20px;
+        justify-content: center;
       }
  
       .weblink:hover {
