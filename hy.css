@@ -394,10 +394,37 @@ html{
     margin-bottom:0px;
     padding-top: 10px;
 }
-.note{
+.sec3 .note{
     text-align: center;
-
 }
+.private-section .first{
+    margin-bottom:0px;
+
+ }
+.private-section .second{
+    padding-top: 10px;
+    margin-bottom: 500px;
+  
+}
+.private-section .last{
+    margin-bottom:50px;
+}
+.private-section .middle{
+    margin-bottom:0px;
+    padding-top: 10px;
+}
+.private-section .note{
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+    flex-direction: column;
+    height: 100dvh;
+    overflow: hidden;
+}
+
 
 .note-info{
     opacity: 60%;
@@ -437,6 +464,8 @@ html{
       width: 50%;
       overflow: hidden;
       aspect-ratio: 1 / 1;
+    justify-content: start;
+    align-content: start;
     }
 .artwork-container .artwork-sec3 {
       width: 100%;
@@ -464,6 +493,7 @@ html{
       animation: scrollMusicAppear both;
     animation-timeline: view(50% 10%);
     animation-range: entry 90% cover 10vh exit;
+  
 }
  @keyframes scrollMusicAppear{
         from {
@@ -910,6 +940,53 @@ button{
 button:hover{
     background-color: rgba(98, 201, 226, 0.61);
 }
+
+
+
+/*PRIVATE SCHOOL SECTION BEGINS HERE*/
+
+
+
+.private-section{
+    height: auto;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px 5%;
+    overflow-x: hidden;
+    margin-top: 10rem;
+    
+}
+
+.headingcontainer-sec4{
+    width: 100%;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+.heading-sec4{
+    font-size: 45px;
+    background: linear-gradient(90deg, #00ffff 10%, #fff 50%,#00ffff);
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 70%;
+
+}
+
+
+
+
+
+
+
+
+/*PRIVATE SCHOOL SECTION ENDS HERE*/
+/*FOOTER SECTION BEGINS HERE*/
 footer{
     text-align: center;
     font-size: 20px;
@@ -922,7 +999,7 @@ footer{
     .footer-section{
     height:55vh;
     width: 100%;
-    margin-top: 12%;
+   
     padding: 15px;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
