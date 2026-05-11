@@ -614,7 +614,7 @@ text-shadow:0 0 20px hsl(0,0%,20%);
     font-family: 'Times New Roman',;
 }
 body{
-    background-image:url(assets/bgcool.webp);
+    background-image:url(assets/bgcool.webp); 
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:100% 100%; 
