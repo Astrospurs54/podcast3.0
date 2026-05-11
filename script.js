@@ -78,3 +78,17 @@ fetch("search-data.json")
     })
 
 
+// drop down menu
+
+  const toggleBtn =document.querySelector(".toggle-Btn")
+    const dropdown =document.querySelector(".dropdown-menu")
+    
+
+    toggleBtn.onclick = function (){ 
+        dropdown.classList.toggle("open")
+        const isOpen = dropdown.classList.contains("open")
+    }
+
+
+// song plays next when song ends in featured section
+
