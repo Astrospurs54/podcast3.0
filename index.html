@@ -190,6 +190,60 @@
 
 <!--second song card-->
 
+ <div class="song-card" id="Mngani-Wami">
+
+     <audio src="assets/rec music/recomend/JayJayy - Mngani Wami (Jaydecai).mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
+        <div class="artwork-container">
+          <img src="assets/pics/recomend/mngani.webp" class="artwork" >
+          <button class="play-button" id="play-button">
+           <div class="play-Icon" id="play-Icon">▶</div >
+          </button>
+        </div>
+        <div class="song-info">        
+                <h3 class="song-title" >Mngani Wami</h3>
+                <p class="artist" >Jay Jayy</p>
+          <!--Progress bar-->
+          <div class="progress-container">
+              <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display">
+                <span class="current-time">0:00</span>
+                <span class="duration">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--third song card-->
+
+
+ <div class="song-card" id="Marato-Fela">
+
+     <audio src="assets/rec music/recomend/Mordecai - Marato Fela.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
+        <div class="artwork-container">
+          <img src="assets/pics/recomend/marato.webp" class="artwork" >
+          <button class="play-button" id="play-button">
+           <div class="play-Icon" id="play-Icon">▶</div >
+          </button>
+        </div>
+        <div class="song-info">        
+                <h3 class="song-title" >Marato Fela</h3>
+                <p class="artist" >Mordecai</p>
+          <!--Progress bar-->
+          <div class="progress-container">
+              <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <!--end of progress bar-->
+          <div class="time-display">
+                <span class="current-time">0:00</span>
+                <span class="duration">0:00</span>
+            </div>
+       
+        </div>
+
+      </div>
+<!--forth song-->
 
       <div class="song-card" id="Umona">
 
@@ -3309,12 +3363,42 @@ let isplaying = false;
         return `\( {min}: \){sec.toString().padStart(2, '0')}`;
     }
 
-     // Reset when song ends
+     // Reset when song ends and play the next song
         audio.addEventListener('ended', () => {
             progressBar.style.width = '0%';
             currentTimeEl.textContent = '0:00';
             playButton.innerHTML = '<div class="play-Icon" id="play-Icon">▶</div>';
             currentAudio = null;
+
+            const recommendedCards = Array.from(document.querySelectorAll('.song-card'));
+            const currentIndex = recommendedCards.findIndex(card => card.contains(audio));
+            if (currentIndex === -1) return;
+
+            const nextCard = recommendedCards[(currentIndex + 1) % recommendedCards.length];
+            const nextAudio = nextCard.querySelector('.song-audio');
+            if (!nextAudio) return;
+
+            document.querySelectorAll('.song-audio').forEach(a => {
+                if (a !== nextAudio) a.pause();
+            });
+
+            songCards.forEach(card => {
+                const btn = card.querySelector('.play-button');
+                if (btn) btn.innerHTML = '<div class="play-Icon" id="play-Icon">▶</div>';
+            });
+
+            nextCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            nextCard.classList.add('highlight');
+            setTimeout(() => nextCard.classList.remove('highlight'), 3000);
+
+            nextAudio.currentTime = 0;
+            nextAudio.play().catch(() => {});
+            currentAudio = nextAudio;
+
+            const nextButton = nextCard.querySelector('.play-button');
+            if (nextButton) {
+                nextButton.innerHTML = '<div class="play-Icon" id="play-Icon">❚❚</div>';
+            }
         });
 
 // update time and progress
