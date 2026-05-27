@@ -231,7 +231,7 @@ html{
     width:90%;
     margin:.2rem auto;
     padding:0.5rem;
-    margin-bottom: 12px;
+
 
 
 }
@@ -310,7 +310,7 @@ html{
       display: flex;
    
       overflow: hidden;
-      height: 55%;
+      height: 50%;
     
     }
 
@@ -358,8 +358,9 @@ html{
     
 
     .song-info {
-      padding: 16px;
+      padding: 5px;
       overflow: hidden;
+     
 
     }
 
@@ -1316,7 +1317,7 @@ p.owner{
 
       }
      .artwork-container{
-    height: 60%;
+    height: 45%;
 
      }
      .artwork-container-sec3{
@@ -1326,8 +1327,8 @@ p.owner{
     font-size: 15px;
    }
    .song-info{
-    height: auto;
-    padding-bottom: 55px;
+    padding: 15px;
+   
    }
     
 
@@ -1415,6 +1416,13 @@ p.owner{
 }
 .footer-section{
     height: 56vh;
+}
+.song-info{
+    padding: 15px;
+}
+.song-card{
+    height:290px;
+
 }
 }
 @media (max-width: 600px) {
@@ -1589,7 +1597,8 @@ padding-bottom: 20px;
 
     }
     .song-info{
-        padding-bottom: 0px;
+        padding: 5px;
+    
     }
     .recommended-unlist{
 height: 180px;
@@ -1647,6 +1656,12 @@ width: 180px;
     padding: 11px;
     color: #c9c9c9;
     opacity: 60%;
+}
+.song-title{
+    width: 100%;
+    overflow: hidden;
+    font-size:12px;
+
 }
 
 }
@@ -1716,7 +1731,7 @@ width: 180px;
       }
 
     .artwork-container{
-    height: 110px;
+    height: 140px;
     }
     .play-button-sec3{
         top: 50%;
@@ -1745,7 +1760,7 @@ width: 180px;
     padding: 10px;
 }
 .song-title{
-    font-size: 13px;
+    font-size: 12px;
 }
 .artist{
     font-size: 13px;
