@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f2bcbece9ab24305a184f1010154afb8"}'></script><!-- End Cloudflare Web Analytics -->
     <script src="https://kit.fontawesome.com/e0245d3b77.js" crossorigin="anonymous"></script>
-   
+   <script src="music-player.js" defer></script>
     
 </head>
 
@@ -152,6 +152,56 @@
     </p></div>      
     <h2 class="section-title">Recommended tracks</h2>
     
+<!--working on musical player-->
+
+
+<div class="music-player">
+          <div class="player-img-box">
+              <img src="assets/logo.webp" class="artwork " id="player-img" >      
+        </div>
+
+        <div class="song-info player-info">
+
+          <div class="title-control">
+            <div class="title">
+              <h3 class="song-title" id="song-title"></h3>
+                <p class="artist" id="artist"></p>
+              </div>
+                      
+              <div class="control-buttons">
+                   <button class="rewind-btn" title="Rewind 10s" id="backward-btn"><i class="fa-solid fa-backward"></i></button>
+
+                     <button class="play-button" id="play-button">
+           <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div >
+          </button>
+
+              <button class="forward-btn" title="Forward 10s" id="forward-btn"><i class="fa-solid fa-forward"></i></button>
+
+
+          
+          </div>
+          </div>        
+            
+       
+                <!--Progress bar-->
+         <div class="bar-container">
+           <input type="range" id="progress-bar" >
+         </div>
+       
+
+          <!--end of progress bar-->
+          <div class="time-display">
+                <span class="current-time">0:00</span>
+                <span class="duration">0:00</span>
+          </div>
+
+          <!--Control buttons-->
+     
+        </div>
+
+</div>
+
+
 
 
 
@@ -163,13 +213,12 @@
     
       <div class="song-card" id="Amaphutha">
 
-     <audio class="song-audio" id="song-audio" preload= "metadata">
-          <source src="https://pub-82a4b9be9cb04d44a1bd8e531065feb8.r2.dev/Babalwa M - Amaphutha.mp3" type="audio/mpeg">
-
+     <audio src="assets/rec music/recomend/Babalwa M - Amaphutha.mp3"   class="song-audio" id="song-audio" preload= "metadata">
+          
      </audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/babalwa2.webp" class="artwork" >
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div >
           </button>
         </div>
@@ -177,20 +226,7 @@
                 <h3 class="song-title" >Amaphutha</h3>
                 <p class="artist" >Babalwa M</p>
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-          <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+        
         </div>
 
       </div>
@@ -202,31 +238,16 @@
  <div class="song-card" id="Mngani-Wami">
 
      <audio src="assets/rec music/recomend/JayJayy - Mngani Wami (Jaydecai).mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
-        <div class="artwork-container">
+        <div class="artwork-container ">
           <img src="assets/pics/recomend/mngani.webp" class="artwork" >
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div >
           </button>
         </div>
-        <div class="song-info">        
+        <div class="song-info ">        
                 <h3 class="song-title" >Mngani Wami</h3>
                 <p class="artist" >Jay Jayy</p>
-          <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
-       
+          <!--Progress bar-->       
         </div>
 
       </div>
@@ -238,7 +259,7 @@
      <audio src="assets/rec music/recomend/Mordecai - Marato Fela.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/marato.webp" class="artwork" >
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div >
           </button>
         </div>
@@ -246,23 +267,8 @@
                 <h3 class="song-title" >Marato Fela</h3>
                 <p class="artist" >Mordecai</p>
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
-       
+        
         </div>
-
       </div>
 <!--forth song-->
 
@@ -271,7 +277,7 @@
      <audio src="assets/rec music/recomend/Umona (feat. sykes).mp3" class="song-audio" id="song-audio" preload="metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/uwona.webp" class="artwork" >
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div >
           </button>
         </div>
@@ -279,21 +285,7 @@
                 <h3 class="song-title" >Uwona</h3>
                 <p class="artist" >MaWhoo</p>
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
-       
+         
         </div>
 
       </div>
@@ -309,7 +301,7 @@
      <audio src="assets/rec music/recomend/Lastborn   Yonkeinto (feat. Leandra.Vert).mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/yonke.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -318,20 +310,7 @@
                 <p class="artist">Lastborn</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -344,7 +323,7 @@
      <audio src="assets/rec music/recomend/Sam_Deep,_DeRose_-_Hamba__Visualizer_(128k).mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/sam.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -353,20 +332,7 @@
                 <p class="artist">Sam deep</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -378,7 +344,7 @@
      <audio src="assets/rec music/recomend/Shaunmusiq - NKOSI.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/shaun.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -387,20 +353,7 @@
                 <p class="artist">Shaunmusiq</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -411,7 +364,7 @@
      <audio src="assets/rec music/recomend/XDUPPY   Bang bonile (feat. Djy Vino, Mbuzi   Seun1401).mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/bangbonile.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -420,20 +373,7 @@
                 <p class="artist">XDUPPY</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -445,7 +385,7 @@
      <audio src="assets/rec music/recomend/Mr JazziQ - Ningalali Emakhaya (feat. Zan Ten   Ta Skippa).mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/mrjazz.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -454,20 +394,7 @@
                 <p class="artist">Mr JazziQ</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -479,7 +406,7 @@
      <audio src="assets/rec music/recomend/Mordecai - Ngiya Gowa.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/mordecai.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -488,20 +415,7 @@
                 <p class="artist">Mordecai</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -512,7 +426,7 @@
      <audio src="assets/rec music/recomend/Priddy K - Ngingowakho (feat. Jamah Musician).mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/ngingowakho.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -521,20 +435,7 @@
                 <p class="artist">Priddy K</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -545,7 +446,7 @@
      <audio src="assets/rec music/recomend/Blxckie - u must neva.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/u must neva.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -554,20 +455,7 @@
                 <p class="artist">Blxckie</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -579,7 +467,7 @@
      <audio src="assets/rec music/recomend/DJ Veek - Nginenkinga.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/nginenkinga.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -588,19 +476,7 @@
                 <p class="artist">Dj veek</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-
-             <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
+          
         </div>
 
       </div>
@@ -611,7 +487,7 @@
      <audio src="assets/rec music/recomend/Babalwa M - Piki Piki.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/sec3/PIKI.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -620,20 +496,7 @@
                 <p class="artist">Babalwa M</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -645,7 +508,7 @@
      <audio src="assets/rec music/recomend/Felo Le Tee - Topic   Ithuba.mp3" class="song-audio" id="song-audio" preload= "metadata"></audio>
         <div class="artwork-container">
           <img src="assets/pics/recomend/ithuba2.webp" class="artwork">
-          <button class="play-button" id="play-button">
+          <button class="play-button  card-button" id="play-button">
            <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>
           </button>
         </div>
@@ -654,20 +517,7 @@
                 <p class="artist" id="Felo">Felo Le Tee</p>
 
           <!--Progress bar-->
-          <div class="progress-container">
-              <div class="progress-bar" id="progress-bar"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display">
-                <span class="current-time">0:00</span>
-                <span class="duration">0:00</span>
-            </div>
-          <!--Control buttons-->
-            <div class="control-buttons">
-              <button class="rewind-btn" title="Rewind 10s"><i class="fa-solid fa-backward"></i></button>
-              <button class="forward-btn" title="Forward 10s"><i class="fa-solid fa-forward"></i></button>
-          </div>
-       
+          
        
         </div>
 
@@ -713,15 +563,7 @@
                 <h3 class="song-title">Ingane Yomuntu</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         
        
         </div>
 
@@ -741,16 +583,7 @@
                 <h3 class="song-title">Ubuhle Bakho</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
-       
+         
         </div>
 
       </div>
@@ -770,16 +603,8 @@
                 <h3 class="song-title">Abafana</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
-       
+       <!--Progress bar remomved-->
+          
         </div>
 
       </div>
@@ -799,15 +624,7 @@
                 <h3 class="song-title">Anginandaba Nabo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -828,15 +645,7 @@
                 <h3 class="song-title">Lane Yam</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -859,15 +668,7 @@
                 <h3 class="song-title">Yes Sir</h3>
                 <p class="artist"></p>
 
-              <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+             <!--Progress bar remomved-->
        
         </div>
 
@@ -888,15 +689,7 @@
                 <h3 class="song-title">Groovy</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -917,15 +710,7 @@
                 <h3 class="song-title">Mali Ye Phepha</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -946,15 +731,7 @@
                 <h3 class="song-title">Phanisha</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -975,15 +752,7 @@
                 <h3 class="song-title">Jikeleza</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1019,15 +788,7 @@
                 <h3 class="song-title">Nini Nanini</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1047,15 +808,7 @@
                 <h3 class="song-title">Gangnam Style</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1076,15 +829,7 @@
                 <h3 class="song-title">Nguye Lo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1105,15 +850,7 @@
                 <h3 class="song-title">Nanini</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1134,15 +871,7 @@
                 <h3 class="song-title">Ekhaya</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1164,15 +893,7 @@
                 <h3 class="song-title">Ama Wishi Wishi</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1225,15 +946,7 @@
                 <h3 class="song-title">Woza</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1253,15 +966,7 @@
                 <h3 class="song-title">Imali Yami</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1282,15 +987,7 @@
                 <h3 class="song-title">Ububele</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1311,15 +1008,7 @@
                 <h3 class="song-title">Nonchalant</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 <!--last song-->
@@ -1340,15 +1029,7 @@
                 <h3 class="song-title">As galavante</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 </div>
@@ -1404,15 +1085,7 @@
                 <h3 class="song-title">Sponono</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1432,15 +1105,7 @@
                 <h3 class="song-title">Abuyile Amakhosi</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1461,15 +1126,7 @@
                 <h3 class="song-title">Nana Thula</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1490,15 +1147,7 @@
                 <h3 class="song-title">Nia Lo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1519,15 +1168,7 @@
                 <h3 class="song-title">Wena</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1549,15 +1190,7 @@
                 <h3 class="song-title">Qoqoqo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1578,15 +1211,7 @@
                 <h3 class="song-title">Lorch</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1607,15 +1232,7 @@
                 <h3 class="song-title">Kabza Chant</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1661,15 +1278,7 @@
                 <h3 class="song-title">Ngyozama</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1689,15 +1298,7 @@
                 <h3 class="song-title">Iphupho</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1718,15 +1319,7 @@
                 <h3 class="song-title">Isthombe</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1747,15 +1340,7 @@
                 <h3 class="song-title">Izimbali</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1776,15 +1361,7 @@
                 <h3 class="song-title">Sondela</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1806,15 +1383,7 @@
                 <h3 class="song-title">Interlude</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1835,15 +1404,7 @@
                 <h3 class="song-title">Kabza Chant 2.0</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1914,15 +1475,7 @@
                 <h3 class="song-title">10K Yey nkomo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1942,15 +1495,7 @@
                 <h3 class="song-title">Amabhoza</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -1971,15 +1516,7 @@
                 <h3 class="song-title">Billiato</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2000,15 +1537,7 @@
                 <h3 class="song-title">Gaze</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2029,15 +1558,7 @@
                 <h3 class="song-title">Esgela</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2059,15 +1580,7 @@
                 <h3 class="song-title">Mukutsuri</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2088,15 +1601,7 @@
                 <h3 class="song-title">Z yakhala</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2117,15 +1622,7 @@
                 <h3 class="song-title">Vumile</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2146,15 +1643,7 @@
                 <h3 class="song-title">Bayabalwa</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2205,15 +1694,7 @@
                 <h3 class="song-title">iXesha</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2233,15 +1714,7 @@
                 <h3 class="song-title">Lyf Styl</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2262,15 +1735,7 @@
                 <h3 class="song-title">Yimi Lo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2291,15 +1756,7 @@
                 <h3 class="song-title">Muhle</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2320,15 +1777,7 @@
                 <h3 class="song-title">Olwangempela</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2350,15 +1799,7 @@
                 <h3 class="song-title">Risasekile</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2408,15 +1849,7 @@
                 </h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2436,15 +1869,7 @@
                 <h3 class="song-title">Mama</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2465,15 +1890,7 @@
                 <h3 class="song-title">Izenzo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2494,15 +1911,7 @@
                 <h3 class="song-title">Ama pentshisi</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2570,15 +1979,7 @@
                 <h3 class="song-title">Ratata</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2598,15 +1999,7 @@
                 <h3 class="song-title">Asiyeke</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2627,15 +2020,7 @@
                 <h3 class="song-title">In Too Deep</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2656,15 +2041,7 @@
                 <h3 class="song-title">Ngisasemncane</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2685,15 +2062,7 @@
                 <h3 class="song-title">Tse Monate</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2756,15 +2125,7 @@
                 <h3 class="song-title">Mari Ye Phepha</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2784,15 +2145,7 @@
                 <h3 class="song-title">Paradise</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2813,15 +2166,7 @@
                 <h3 class="song-title">Umhlaba</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2842,15 +2187,7 @@
                 <h3 class="song-title">Jazz Prayer</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2871,15 +2208,7 @@
                 <h3 class="song-title">Deep To Soul</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2917,15 +2246,7 @@
                 <h3 class="song-title">Buya</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2945,15 +2266,7 @@
                 <h3 class="song-title">Ndonwabile</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -2974,15 +2287,7 @@
                 <h3 class="song-title">Emakhaya</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3003,15 +2308,7 @@
                 <h3 class="song-title">Emhlabeni</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3051,15 +2348,7 @@
                 <h3 class="song-title">Kholwa</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3079,15 +2368,7 @@
                 <h3 class="song-title">Impilo</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3108,15 +2389,7 @@
                 <h3 class="song-title">Gumbaya</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3153,15 +2426,7 @@
                 <h3 class="song-title">Intro</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3181,15 +2446,7 @@
                 <h3 class="song-title">Dludlu</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3210,15 +2467,7 @@
                 <h3 class="song-title">Ivy League</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3239,15 +2488,7 @@
                 <h3 class="song-title">Inyembezi</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3268,15 +2509,7 @@
                 <h3 class="song-title">Teka</h3>
                 <p class="artist"></p>
 
-          <!--Progress bar-->
-          <div class="progress-container-sec3">
-              <div class="progress-bar-sec3" id="progress-bar-sec3"></div>
-          </div>
-          <!--end of progress bar-->
-          <div class="time-display-sec3">
-                <span class="current-time-sec3">0:00</span>
-                <span class="duration-sec3">0:00</span>
-            </div>
+         <!--Progress bar remomved-->
        
         </div>
 
@@ -3333,7 +2566,7 @@
 
 
 
-
+<script src="of-cast.js"></script>
 
 
 
@@ -3385,353 +2618,6 @@
 
 
 <!-- THIS MARKS THE END OF THE INTEXT CODE EXCLUDING  FOOTER SECTION-->
-
-<script>
-
-const audio = document.getElementById("song-audio")
-const playIcon =document.getElementById("play-Icon")
-const playBtn = document.getElementById("play-button")
-
-
-let isplaying = false;
-
-        // Play/Pause handler
-
-      playBtn.addEventListener("click", () => {
-          
-         if (isplaying) {
-                audio.pause();
-               playIcon.innerHTML = '<div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>';
-                
-            } else {
-                audio.play();
-              playIcon.innerHTML = '<div class="play-Icon" id="play-Icon"><i class="fa-solid fa-pause"></i></div>';
-       
-            }
-
-            isplaying = !isplaying;
-
-      });
-
-
-      // playing song card
-      const songCards = document.querySelectorAll(".song-card");
-    let currentAudio = null;   // Keeps track of the currently playing audio
-
-    songCards.forEach(card => {
-        const audio = card.querySelector('.song-audio');
-        const playButton = card.querySelector('.play-button');
-        const progressContainer = card.querySelector('.progress-container');
-        const progressBar = card.querySelector('.progress-bar');
-        const currentTimeEl = card.querySelector('.current-time');
-        const durationEl = card.querySelector('.duration');
-
-
-
-        
-        // Update progress bar
-        audio.addEventListener('timeupdate', () => {
-            if (audio.duration) {
-                const percent = (audio.currentTime / audio.duration) * 100;
-                progressBar.style.width = percent + '%';
-                currentTimeEl.textContent = formatTime(audio.currentTime);
-            }
-        });
-
-         // Seek when clicking progress bar
-        progressContainer.addEventListener('click', (e) => {
-            const rect = progressContainer.getBoundingClientRect();
-            const clickX = e.clientX - rect.left;
-            const percent = clickX / rect.width;
-            audio.currentTime = percent * audio.duration;
-        });
-        // Helper function: seconds → MM:SS
-    function formatTime(seconds) {
-        if (!seconds || isNaN(seconds)) return "0:00";
-        const min = Math.floor(seconds / 60);
-        const sec = Math.floor(seconds % 60);
-        return `\( {min}: \){sec.toString().padStart(2, '0')}`;
-    }
-
-     // Reset when song ends and play the next song
-        audio.addEventListener('ended', () => {
-            progressBar.style.width = '0%';
-            currentTimeEl.textContent = '0:00';
-            playButton.innerHTML = '<div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>';
-            currentAudio = null;
-
-            const recommendedCards = Array.from(document.querySelectorAll('.song-card'));
-            const currentIndex = recommendedCards.findIndex(card => card.contains(audio));
-            if (currentIndex === -1) return;
-
-            const nextCard = recommendedCards[(currentIndex + 1) % recommendedCards.length];
-            const nextAudio = nextCard.querySelector('.song-audio');
-            if (!nextAudio) return;
-
-            document.querySelectorAll('.song-audio').forEach(a => {
-                if (a !== nextAudio) a.pause();
-            });
-
-            songCards.forEach(card => {
-                const btn = card.querySelector('.play-button');
-                if (btn) btn.innerHTML = '<div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>';
-            });
-
-            nextCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            nextCard.classList.add('highlight');
-            setTimeout(() => nextCard.classList.remove('highlight'), 3000);
-
-            nextAudio.currentTime = 0;
-            nextAudio.play().catch(() => {});
-            currentAudio = nextAudio;
-
-            const nextButton = nextCard.querySelector('.play-button');
-            if (nextButton) {
-                nextButton.innerHTML = '<div class="play-Icon" id="play-Icon"><i class="fa-solid fa-pause"></i></div>';
-            }
-        });
-
-// update time and progress
-
-audio.addEventListener("timeupdate", () => {
-
-  progressBar.value =(audio.currentTimeEl / audio.duration) *100;
-
-  let currentMinutes = Math.floor(audio.currentTime / 60);
-  let currentSeconds = Math.floor(audio.currentTime % 60);
-
-  if (currentSeconds < 10) {
-    currentSeconds = "0" + currentSeconds;
-  }
-
-  currentTimeEl.textContent = currentMinutes + ":" + currentSeconds;
-
-  let durationMinutes = Math.floor(audio.duration / 60);
-  let durationSeconds = Math.floor(audio.duration % 60);
-
-  if (durationSeconds < 10) {
-    durationSeconds = "0" + durationSeconds;
-  }
-
-  durationEl.textContent = durationMinutes + ":" + durationSeconds;
-});
-    
-        // Play/Pause handler
-        playButton.addEventListener('click', () => {
-            // If another song is playing, pause it first
-            if (currentAudio && currentAudio !== audio ) {
-                currentAudio.pause();
-            
-                // Reset previous play button
-                document.querySelectorAll('.play-button').forEach(btn => {
-                    if (btn !== playButton) btn.innerHTML = ' <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>';
-                });
-            }
-            if (currentAudiosec3 && currentAudiosec3 !== myaudio) {
-                currentAudiosec3.pause();
-              
-               // Reset previous play button
-                document.querySelectorAll('.play-button-sec3').forEach(btn => {
-                    if (btn !== playButton) btn.innerHTML = ' <div class="play-Icon-sec3" id="play-Icon-sec3"><i class="fa-solid fa-play"></i></div>';
-                });
-            }
-
-            if (audio.paused) {
-                audio.play();
-                playButton.innerHTML = '<div class="play-Icon" id="play-Icon"><i class="fa-solid fa-pause"></i></div>'; // Pause icon
-                currentAudio = audio;
-            } else {
-                audio.pause();
-                playButton.innerHTML = ' <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>';
-            }
-        });
-
-        // Fast forward button
-        const forwardBtn = card.querySelector('.forward-btn');
-        if (forwardBtn) {
-            forwardBtn.addEventListener('click', () => {
-                audio.currentTime = Math.min(audio.currentTime + 10, audio.duration);
-            });
-        }
-
-        // Rewind button
-        const rewindBtn = card.querySelector('.rewind-btn');
-        if (rewindBtn) {
-            rewindBtn.addEventListener('click', () => {
-                audio.currentTime = Math.max(audio.currentTime - 10, 0);
-            });
-        }
-    });
- 
-    //calling constants of sec3
-const myaudio = document.getElementById("song-audio-sec3")
-const playIconsec3 =document.getElementById("play-Icon-sec3")
-const playBtnsec3 = document.getElementById("play-button-sec3")
-
-
-let isplay = false;
-
-        // Play/Pause handler
-
-      playBtnsec3.addEventListener("click", () => {
-          
-         if (isplay) {
-                myaudio.pause();
-                playIconsec3.innerHTML = '<i class="fa-solid fa-play"></i>';
-       
-                
-            } else {
-                myaudio.play();
-                playIconsec3.innerHTML = '<i class="fa-solid fa-pause"></i>';
-       
-            }
-
-            isplay = !isplay;
-
-      });
-
-
-      const songCardssec3 = document.querySelectorAll(".song-card-sec3");
-    let currentAudiosec3 = null;   // Keeps track of the currently playing audio
-
-    songCardssec3.forEach(card => {
-        const myaudio = card.querySelector('.song-audio-sec3');
-        const playButtonsec3 = card.querySelector('.play-button-sec3');
-        const progressContainersec3 = card.querySelector('.progress-container-sec3');
-        const progressBarsec3 = card.querySelector('.progress-bar-sec3');
-        const currentTimesec3 = card.querySelector('.current-time-sec3');
-        const durationsec3 = card.querySelector('.duration-sec3');
-
-
-
-        
-        // Update progress bar
-        myaudio.addEventListener('timeupdate', () => {
-            if (myaudio.duration) {
-                const percent = (myaudio.currentTime / myaudio.duration) * 100;
-                progressBarsec3.style.width = percent + '%';
-                currentTimesec3.textContent = formatTime(myaudio.currentTime);
-            }
-        });
-
-         // Seek when clicking progress bar
-        progressContainersec3.addEventListener('click', (e) => {
-            const rect = progressContainersec3.getBoundingClientRect();
-            const clickX = e.clientX - rect.left;
-            const percent = clickX / rect.width;
-            myaudio.currentTime = percent * myaudio.duration;
-        });
-
-        
-        // Helper function: seconds → MM:SS
-    function formatTime(seconds) {
-        if (!seconds || isNaN(seconds)) return "0:00";
-        const min = Math.floor(seconds / 60);
-        const sec = Math.floor(seconds % 60);
-        return `\( {min}: \){sec.toString().padStart(2, '0')}`;
-    }
-
-
-    // Reset when song ends and play the next sec3 song
-        myaudio.addEventListener('ended', () => {
-            progressBarsec3.style.width = '0%';
-            currentTimesec3.textContent = '0:00';
-            playButtonsec3.innerHTML = '<div class="play-Icon-sec3" id="play-Icon-sec3"><i class="fa-solid fa-play"></i></div>';
-            currentAudiosec3 = null;
-
-            const sec3Cards = Array.from(document.querySelectorAll('.song-card-sec3'));
-            const currentIndex = sec3Cards.findIndex(card => card.contains(myaudio));
-            if (currentIndex === -1) return;
-
-            const nextCard = sec3Cards[(currentIndex + 1) % sec3Cards.length];
-            const nextAudio = nextCard.querySelector('.song-audio-sec3');
-            if (!nextAudio) return;
-
-            document.querySelectorAll('.song-audio-sec3').forEach(a => {
-                if (a !== nextAudio) a.pause();
-            });
-
-            songCardssec3.forEach(card => {
-                const btn = card.querySelector('.play-button-sec3');
-                if (btn) btn.innerHTML = '<div class="play-Icon-sec3" id="play-Icon-sec3"><i class="fa-solid fa-play"></i></div>';
-            });
-
-            nextCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            nextCard.classList.add('highlight');
-            setTimeout(() => nextCard.classList.remove('highlight'), 3000);
-
-            nextAudio.currentTime = 0;
-            nextAudio.play().catch(() => {});
-            currentAudiosec3 = nextAudio;
-
-            const nextButton = nextCard.querySelector('.play-button-sec3');
-            if (nextButton) {
-                nextButton.innerHTML = '<div class="play-Icon-sec3" id="play-Icon-sec3"><i class="fa-solid fa-pause"></i></div>';
-            }
-        });
-// update time and progress
-
-myaudio.addEventListener("timeupdate", () => {
-
-  progressBarsec3.value =(myaudio.currentTimesec3 / myaudio.duration) *100;
-
-  let currentMinutes = Math.floor(myaudio.currentTime / 60);
-  let currentSeconds = Math.floor(myaudio.currentTime % 60);
-
-  if (currentSeconds < 10) {
-    currentSeconds = "0" + currentSeconds;
-  }
-
-  currentTimesec3.textContent = currentMinutes + ":" + currentSeconds;
-
-  let durationMinutes = Math.floor(myaudio.duration / 60);
-  let durationSeconds = Math.floor(myaudio.duration % 60);
-
-  if (durationSeconds < 10) {
-    durationSeconds = "0" + durationSeconds;
-  }
-
-  durationsec3.textContent = durationMinutes + ":" + durationSeconds;
-});
-    
-        // Play/Pause handler
-        playButtonsec3.addEventListener('click', () => {
-            // If another song is playing, pause it first
-            if (currentAudiosec3 && currentAudiosec3 !== myaudio) {
-                currentAudiosec3.pause();
-             // Reset when playing another song
-             
-                // Reset previous play button
-                document.querySelectorAll('.play-button-sec3').forEach(btn => {
-                    if (btn !== playButtonsec3) btn.innerHTML = ' <div class="play-Icon-sec3" id="play-Icon-sec3"><i class="fa-solid fa-play"></i></div>';
-                });
-
-            }
-            if (currentAudio && currentAudio !== audio ) {
-                currentAudio.pause();
-            
-                 // Reset previous play button
-                document.querySelectorAll('.play-button').forEach(btn => {
-                    if (btn !== playButtonsec3) btn.innerHTML = ' <div class="play-Icon" id="play-Icon"><i class="fa-solid fa-play"></i></div>';
-                });
-            }
-
-            if (myaudio.paused) {
-                myaudio.play();
-                playButtonsec3.innerHTML = '<div class="play-Icon-sec3" id="play-Icon-sec3"><i class="fa-solid fa-pause"></i></div>'; // Pause icon
-                currentAudiosec3 = myaudio;
-            } else {
-                myaudio.pause();
-                playButtonsec3.innerHTML = ' <div class="play-Icon-sec3" id="play-Icon-sec3"><i class="fa-solid fa-play"></i></div>';
-            }
-        });
-    });
- 
-
-
-      
-</script>
-
 
 
 

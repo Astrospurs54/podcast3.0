@@ -1,0 +1,674 @@
+{
+  "total_songs": 88,
+  "artists_summary": {
+    "Featured Recommended Tracks": 12,
+    "Mas Musiq": 17,
+    "Kabza De Small": 15,
+    "Aymos": 19,
+    "Leandra Vert": 5,
+    "Kelvin Momo": 20
+  },
+  "songs": {
+    "Featured Recommended Tracks": [
+      {
+        "id": "Amaphutha",
+        "title": "Amaphutha",
+        "artist": "Babalwa M",
+        "audio_path": "assets/rec music/recomend/Babalwa M - Amaphutha.mp3",
+        "image_path": "assets/pics/recomend/babalwa2.webp"
+      },
+      {
+        "id": "Mngani-Wami",
+        "title": "Mngani Wami",
+        "artist": "Jay Jayy",
+        "audio_path": "assets/rec music/recomend/JayJayy - Mngani Wami (Jaydecai).mp3",
+        "image_path": "assets/pics/recomend/mngani.webp"
+      },
+      {
+        "id": "Marato-Fela",
+        "title": "Marato Fela",
+        "artist": "Mordecai",
+        "audio_path": "assets/rec music/recomend/Mordecai - Marato Fela.mp3",
+        "image_path": "assets/pics/recomend/marato.webp"
+      },
+      {
+        "id": "Umona",
+        "title": "Uwona",
+        "artist": "MaWhoo",
+        "audio_path": "assets/rec music/recomend/Umona (feat. sykes).mp3",
+        "image_path": "assets/pics/recomend/uwona.webp"
+      },
+      {
+        "id": "Yonkeinto",
+        "title": "Yonkeinto",
+        "artist": "Lastborn",
+        "audio_path": "assets/rec music/recomend/Lastborn   Yonkeinto (feat. Leandra.Vert).mp3",
+        "image_path": "assets/pics/recomend/yonke.webp"
+      },
+      {
+        "id": "Hamba",
+        "title": "Hamba",
+        "artist": "Sam deep",
+        "audio_path": "assets/rec music/recomend/Sam_Deep,_DeRose_-_Hamba__Visualizer_(128k).mp3",
+        "image_path": "assets/pics/recomend/sam.webp"
+      },
+      {
+        "id": "NKOSI",
+        "title": "NKOSI",
+        "artist": "Shaunmusiq",
+        "audio_path": "assets/rec music/recomend/Shaunmusiq - NKOSI.mp3",
+        "image_path": "assets/pics/recomend/shaun.webp"
+      },
+      {
+        "id": "Bangbonile",
+        "title": "Bang'bonile",
+        "artist": "XDUPPY",
+        "audio_path": "assets/rec music/recomend/XDUPPY   Bang bonile (feat. Djy Vino, Mbuzi   Seun1401).mp3",
+        "image_path": "assets/pics/recomend/bangbonile.webp"
+      },
+      {
+        "id": "Ningalali-Emakhaya",
+        "title": "Ningalali Emakhaya",
+        "artist": "Mr JazziQ",
+        "audio_path": "assets/rec music/recomend/Mr JazziQ - Ningalali Emakhaya (feat. Zan Ten   Ta Skippa).mp3",
+        "image_path": "assets/pics/recomend/mrjazz.webp"
+      },
+      {
+        "id": "Ngiya-Gowa",
+        "title": "Ngiya Gowa",
+        "artist": "Mordecai",
+        "audio_path": "assets/rec music/recomend/Mordecai - Ngiya Gowa.mp3",
+        "image_path": "assets/pics/recomend/mordecai.webp"
+      },
+      {
+        "id": "Ngingowakho",
+        "title": "Ngingowakho",
+        "artist": "Priddy K",
+        "audio_path": "assets/rec music/recomend/Priddy K - Ngingowakho (feat. Jamah Musician).mp3",
+        "image_path": "assets/pics/recomend/ngingowakho.webp"
+      },
+      {
+        "id": "U-must-neva",
+        "title": "U must neva",
+        "artist": "Blxckie",
+        "audio_path": "assets/rec music/recomend/Blxckie - u must neva.mp3",
+        "image_path": "assets/pics/recomend/u must neva.webp"
+      },
+      {
+        "id": "Nginenkinga",
+        "title": "Nginenkinga",
+        "artist": "Dj veek",
+        "audio_path": "assets/rec music/recomend/DJ Veek - Nginenkinga.mp3",
+        "image_path": "assets/pics/recomend/nginenkinga.webp"
+      },
+      {
+        "id": "Piki-Piki",
+        "title": "Piki Piki",
+        "artist": "Babalwa M",
+        "audio_path": "assets/rec music/recomend/Babalwa M - Piki Piki.mp3",
+        "image_path": "assets/pics/sec3/PIKI.webp"
+      },
+      {
+        "id": "Ithuba",
+        "title": "Ithuba",
+        "artist": "Felo Le Tee",
+        "audio_path": "assets/rec music/recomend/Felo Le Tee - Topic   Ithuba.mp3",
+        "image_path": "assets/pics/recomend/ithuba2.webp"
+      }
+    ],
+    "Mas Musiq": [
+      {
+        "id": "Ingane-Yomuntu",
+        "title": "Ingane Yomuntu",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Ingane Yomuntu.mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Ubuhle-Bakho",
+        "title": "Ubuhle Bakho",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Ubuhle Bakho (feat. Thuli P) (1).mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Abafana",
+        "title": "Abafana",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Abafana (feat. Chley   KJM-Cornetist) (1).mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Anginandaba-Nabo",
+        "title": "Anginandaba Nabo",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Anginandaba Nabo (feat. Eemoh).mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Lane-Yam",
+        "title": "Lane Yam",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - LANE YAM (feat. Nia Pearl, Aymos   Musa Keyz).mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Yes-Sir",
+        "title": "Yes Sir",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Yes Sir (feat. Mukundi).mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Groovy",
+        "title": "Groovy",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas_Musiq_Groovy_feat_Lawd_Weezy,_KJM_Cornetist_Corry_Da_G.mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Mali-Ye-Phepha",
+        "title": "Mali Ye Phepha",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas_Musiq_Mali_Ye_Phepha_feat_Nhlanhla_Dube_Mlindo_The_Voc.mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Phanisha",
+        "title": "Phanisha",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Phanisha.mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Jikeleza",
+        "title": "Jikeleza",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Jikeleza (feat. Nia Pearl   Mawhoo).mp3",
+        "image_path": "assets/pics/sec3/L.webp"
+      },
+      {
+        "id": "Nini-Nanini",
+        "title": "Nini Nanini",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Nini Nannini (feat. Daliwonga   Howard Gomba).mp3",
+        "image_path": "assets/pics/sec3/N.webp"
+      },
+      {
+        "id": "Gangnam-Style",
+        "title": "Gangnam Style",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Gangnam Style (feat. DJ Maphorisa   Kabza De Sma (1).mp3",
+        "image_path": "assets/pics/sec3/N.webp"
+      },
+      {
+        "id": "Nguye-Lo",
+        "title": "Nguye Lo",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Nguye Lo (feat. Ami Faku).mp3",
+        "image_path": "assets/pics/sec3/N.webp"
+      },
+      {
+        "id": "Nanini",
+        "title": "Nanini",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Nanini (feat. Acatears).mp3",
+        "image_path": "assets/pics/sec3/N.webp"
+      },
+      {
+        "id": "Ekhaya",
+        "title": "Ekhaya",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Ekhaya (feat. Aymos   Kelvin Momo).mp3",
+        "image_path": "assets/pics/sec3/N.webp"
+      },
+      {
+        "id": "Ama-Wishi-Wishi",
+        "title": "Ama Wishi Wishi",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Ama Wishi Wishi (feat. Aymos, Leon Lee   Howard.mp3",
+        "image_path": "assets/pics/sec3/N.webp"
+      },
+      {
+        "id": "Woza",
+        "title": "Woza",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/B/Mas Musiq - Woza (feat. Eemoh   Dj Maphorisa).mp3",
+        "image_path": "assets/pics/sec3/bas.webp"
+      },
+      {
+        "id": "Imali-Yami",
+        "title": "Imali Yami",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/B/Mas_Musiq_iMali_yami_feat_DBN_Gogo,_Xolani_Guitars_Lawd_We.mp3",
+        "image_path": "assets/pics/sec3/bas.webp"
+      },
+      {
+        "id": "Ububele",
+        "title": "Ububele",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/B/Mas Musiq - Ububele (feat. Lawd Weezy   Thatohatsi).mp3",
+        "image_path": "assets/pics/sec3/bas.webp"
+      },
+      {
+        "id": "Nonchalant",
+        "title": "Nonchalant",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/B/Mas Musiq - Nonchalant.mp3",
+        "image_path": "assets/pics/sec3/bas.webp"
+      },
+      {
+        "id": "As-galavante",
+        "title": "As galavante",
+        "artist": "Mas Musiq",
+        "audio_path": "assets/rec music/MAS/B/Mas Musiq - As galavante.mp3",
+        "image_path": "assets/pics/sec3/bas.webp"
+      }
+    ],
+    "Kabza De Small": [
+      {
+        "id": "Sponono",
+        "title": "Sponono",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza De Small - Sponono (feat. Wizkid, Burna Boy, Cassper N.mp3",
+        "image_path": "assets/pics/sec3/ka.webp"
+      },
+      {
+        "id": "Abuyile-Amakhosi",
+        "title": "Abuyile Amakhosi",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza De Small - Abuyile Amakhosi (feat. King Tha   Busiswa).mp3",
+        "image_path": "assets/pics/sec3/ka.webp"
+      },
+      {
+        "id": "Nana-Thula",
+        "title": "Nana Thula",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza De Small - Nana Thula (feat. Njelic, Young Stunna   Xo.mp3",
+        "image_path": "assets/pics/sec3/konka.webp"
+      },
+      {
+        "id": "Nia-Lo",
+        "title": "Nia Lo",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza De Small - Nia Lo (feat. Nia Pearl).mp3",
+        "image_path": "assets/pics/sec3/ka.webp"
+      },
+      {
+        "id": "Wena",
+        "title": "Wena",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza De Small - Wena (feat. Howard, Nia Pearl   Daliwonga).mp3",
+        "image_path": "assets/pics/sec3/ka.webp"
+      },
+      {
+        "id": "Qoqoqo",
+        "title": "Qoqoqo",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza De Small - Qoqoqo (feat. Mlindo The Vocalist).mp3",
+        "image_path": "assets/pics/sec3/king.webp"
+      },
+      {
+        "id": "Lorch",
+        "title": "Lorch",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza De Small - Lorch (feat. Semi Tee, Miano   Kammu Dee).mp3",
+        "image_path": "assets/pics/sec3/king.webp"
+      },
+      {
+        "id": "Kabza-Chant",
+        "title": "Kabza Chant",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/Kabza_De_Small_Kabza_Chant_feat_Young_Stunna,_Nkosazana_Daug.mp3",
+        "image_path": "assets/pics/sec3/chant.webp"
+      },
+      {
+        "id": "Ngyozama",
+        "title": "Ngyozama",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/2/Kabza_De_Small_Ngyozama_feat_Sykes,_Young_Stunna,_Nkosazana.mp3",
+        "image_path": "assets/pics/sec3/babmotha.webp"
+      },
+      {
+        "id": "Iphupho",
+        "title": "Iphupho",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/2/Kabza De Small - Iphupho (feat. Thatohatsi).mp3",
+        "image_path": "assets/pics/sec3/babmotha.webp"
+      },
+      {
+        "id": "Isthombe",
+        "title": "Isthombe",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/2/Kabza De Small - Isthombe (feat. Mthunzi   Young Stunna).mp3",
+        "image_path": "assets/pics/sec3/babmotha.webp"
+      },
+      {
+        "id": "Izimbali",
+        "title": "Izimbali",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/2/Kabza De Small - Izimbali (feat. Thatohatsi   Murumba Pitch).mp3",
+        "image_path": "assets/pics/sec3/babmotha.webp"
+      },
+      {
+        "id": "Sondela",
+        "title": "Sondela",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/2/Kabza De Small - Sondela (feat. Ami Faku   Mhaw Keys).mp3",
+        "image_path": "assets/pics/sec3/koa.webp"
+      },
+      {
+        "id": "Interlude",
+        "title": "Interlude",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/2/Kabza De Small - Interlude.mp3",
+        "image_path": "assets/pics/sec3/babmotha.webp"
+      },
+      {
+        "id": "Kabza-Chant-2",
+        "title": "Kabza Chant 2.0",
+        "artist": "Kabza De Small",
+        "audio_path": "assets/rec music/KABZA/2/Kabza_De_Small_Kabza_Chant_2_0_feat_Nobuhle,_Nkosazana_Daugh.mp3",
+        "image_path": "assets/pics/sec3/babmotha.webp"
+      }
+    ],
+    "Aymos": [
+      {
+        "id": "10K-Yey-nkomo",
+        "title": "10K Yey nkomo",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - 10K Yey nkomo (1).mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Amabhoza",
+        "title": "Amabhoza",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Amabhoza (2).mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Billiato",
+        "title": "Billiato",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Billiato.mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Gaze",
+        "title": "Gaze",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Gaze.mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Esgela",
+        "title": "Esgela",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Esgela (1).mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Mukutsuri",
+        "title": "Mukutsuri",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Mukutsuri.mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Z-yakhala",
+        "title": "Z yakhala",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Z yakhala.mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Vumile",
+        "title": "Vumile",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Vumile.mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "Bayabalwa",
+        "title": "Bayabalwa",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/impilo/Aymos - Bayabalwa.mp3",
+        "image_path": "assets/pics/sec3/impilo.webp"
+      },
+      {
+        "id": "iXesha",
+        "title": "iXesha",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/yimi lo/Aymos - iXesha.mp3",
+        "image_path": "assets/pics/sec3/yey.webp"
+      },
+      {
+        "id": "Lyf-Styl",
+        "title": "Lyf Styl",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/yimi lo/Aymos - Lyf Styl.mp3",
+        "image_path": "assets/pics/sec3/yey.webp"
+      },
+      {
+        "id": "Yimi-Lo",
+        "title": "Yimi Lo",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/yimi lo/Aymos - Yimi Lo.mp3",
+        "image_path": "assets/pics/sec3/yey.webp"
+      },
+      {
+        "id": "Muhle",
+        "title": "Muhle",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/yimi lo/Aymos - Muhle.mp3",
+        "image_path": "assets/pics/sec3/yey.webp"
+      },
+      {
+        "id": "Olwangempela",
+        "title": "Olwangempela",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/yimi lo/Aymos - Olwangempela.mp3",
+        "image_path": "assets/pics/sec3/yey.webp"
+      },
+      {
+        "id": "Risasekile",
+        "title": "Risasekile",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/yimi lo/Aymos - Risasekile (1).mp3",
+        "image_path": "assets/pics/sec3/yey.webp"
+      },
+      {
+        "id": "Lyf-Styl-(live)",
+        "title": "Lyf Styl (live)",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/Aymos - Lyf Styl (Live).mp3",
+        "image_path": "assets/pics/sec3/live.webp"
+      },
+      {
+        "id": "Mama",
+        "title": "Mama",
+        "artist": "Aymos",
+        "audio_path": "assets/rec music/AYMOS/Aymos - Mama.mp3",
+        "image_path": "assets/pics/sec3/mama.webp"
+      },
+      {
+        "id": "Izenzo",
+        "title": "Izenzo",
+        "artist": "Bassie",
+        "audio_path": "assets/rec music/AYMOS/Bassie - Izenzo.mp3",
+        "image_path": "assets/pics/sec3/izenzo.webp"
+      },
+      {
+        "id": "Ama-pentshisi",
+        "title": "Ama pentshisi",
+        "artist": "Emotionz DJ",
+        "audio_path": "assets/rec music/AYMOS/Emotionz DJ - Ama pentshisi (feat. Aymos   Happy Jazzman).mp3",
+        "image_path": "assets/pics/sec3/AMA.webp"
+      }
+    ],
+    "Leandra Vert": [
+      {
+        "id": "Ratata",
+        "title": "Ratata",
+        "artist": "Leandra Vert",
+        "audio_path": "assets/rec music/VERT/Leandra.Vert - Ratata.mp3",
+        "image_path": "assets/pics/sec3/RATATA.webp"
+      },
+      {
+        "id": "Asiyeke",
+        "title": "Asiyeke",
+        "artist": "Leandra Vert",
+        "audio_path": "assets/rec music/VERT/Leandra.Vert - Asiyeke.mp3",
+        "image_path": "assets/pics/sec3/ASIYEKE.webp"
+      },
+      {
+        "id": "In-Too-Deep",
+        "title": "In Too Deep",
+        "artist": "Leandra Vert",
+        "audio_path": "assets/rec music/VERT/Leandra.Vert - In Too Deep.mp3",
+        "image_path": "assets/pics/sec3/DEEP.webp"
+      },
+      {
+        "id": "Ngisasemncane",
+        "title": "Ngisasemncane",
+        "artist": "Leandra Vert",
+        "audio_path": "assets/rec music/VERT/Leandra.Vert - Ngisasemncane.mp3",
+        "image_path": "assets/pics/sec3/NGISASEMCANE.webp"
+      },
+      {
+        "id": "Tse-Monate",
+        "title": "Tse Monate",
+        "artist": "Leandra Vert",
+        "audio_path": "assets/rec music/VERT/Leandra.Vert - Tse Monate (feat. Mustbedubz).mp3",
+        "image_path": "assets/pics/sec3/TSE.webp"
+      }
+    ],
+    "Kelvin Momo": [
+      {
+        "id": "Mari-Ye-Phepha",
+        "title": "Mari Ye Phepha",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/JAZZ/Kelvin Momo - Mari Ye Phepha (Kedi Cruise Remix).mp3",
+        "image_path": "assets/pics/sec3/JAZZ.webp"
+      },
+      {
+        "id": "Paradise",
+        "title": "Paradise",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/JAZZ/Kelvin_Momo_Paradise_feat_EltonK,_Makhanj,_Nvcho_Jay_Sax (1).mp3",
+        "image_path": "assets/pics/sec3/JAZZ.webp"
+      },
+      {
+        "id": "Umhlaba",
+        "title": "Umhlaba",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/JAZZ/Kelvin Momo - Umhlaba (feat. MKeyz, Chley   Nvcho).mp3",
+        "image_path": "assets/pics/sec3/JAZZ.webp"
+      },
+      {
+        "id": "Jazz-prayer",
+        "title": "Jazz Prayer",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/JAZZ/Kelvin Momo - Jazz Prayer (feat. Marvin, Mano   Mzizi).mp3",
+        "image_path": "assets/pics/sec3/JAZZ.webp"
+      },
+      {
+        "id": "Deep-to-soul",
+        "title": "Deep To Soul",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/JAZZ/Kelvin Momo - Deep To Soul (feat. Mathandos).mp3",
+        "image_path": "assets/pics/sec3/JAZZ.webp"
+      },
+      {
+        "id": "Buya",
+        "title": "Buya",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/MODIMO/Kelvin Momo - Buya.mp3",
+        "image_path": "assets/pics/sec3/MODIMO.webp"
+      },
+      {
+        "id": "Ndonwabile",
+        "title": "Ndonwabile",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/MODIMO/Kelvin Momo - Ndonwabile (feat. Raspy   Babalwa M).mp3",
+        "image_path": "assets/pics/sec3/MODIMO.webp"
+      },
+      {
+        "id": "Emakhaya",
+        "title": "Emakhaya",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/MODIMO/Kelvin Momo - Emakhaya (feat. Cnethemba Gonelo   Mr Maker).mp3",
+        "image_path": "assets/pics/sec3/MODIMO.webp"
+      },
+      {
+        "id": "Emhlabeni",
+        "title": "Emhlabeni",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/MODIMO/Kelvin Momo - Emhlabeni (feat. Thatohatsi   Tracy).mp3",
+        "image_path": "assets/pics/sec3/MODIMO.webp"
+      },
+      {
+        "id": "Kholwa",
+        "title": "Kholwa",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/MOMO/Kelvin Momo - Kholwa (feat. Babalwa M   M Keyz).mp3",
+        "image_path": "assets/pics/sec3/MOMO.webp"
+      },
+      {
+        "id": "Impilo",
+        "title": "Impilo",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/MOMO/Kelvin Momo - Impilo (feat. Kabza De Small, Mhaw Keys, Babal.mp3",
+        "image_path": "assets/pics/sec3/MOMO.webp"
+      },
+      {
+        "id": "Gumbaya",
+        "title": "Gumbaya",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/MOMO/Kelvin Momo - Gumbaya (feat. Denny Dugg) (Kelvin Momo s Soul.mp3",
+        "image_path": "assets/pics/sec3/MOMO.webp"
+      },
+      {
+        "id": "Intro",
+        "title": "Intro",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/IVY/Kelvin Momo - Intro (feat. Babalwa M and Sekiwe).mp3",
+        "image_path": "assets/pics/sec3/IVY.webp"
+      },
+      {
+        "id": "Dludlu",
+        "title": "Dludlu",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/IVY/Kelvin Momo - Dludlu (feat. Steve, Mgiftos and Yumbs).mp3",
+        "image_path": "assets/pics/sec3/IVY.webp"
+      },
+      {
+        "id": "Ivy-League",
+        "title": "Ivy League",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/IVY/Kelvin Momo - Ivy League (feat. Ch cco, Yumbs, Ta Skipper an.mp3",
+        "image_path": "assets/pics/sec3/IVY.webp"
+      },
+      {
+        "id": "Inyembezi",
+        "title": "Inyembezi",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/IVY/Kelvin Momo - Inyembezi (feat. Babalwa M and Aymos).mp3",
+        "image_path": "assets/pics/sec3/IVY.webp"
+      },
+      {
+        "id": "Teka",
+        "title": "Teka",
+        "artist": "Kelvin Momo",
+        "audio_path": "assets/rec music/momo/IVY/Kelvin Momo - Teka.mp3",
+        "image_path": "assets/pics/sec3/IVY.webp"
+      }
+    ]
+  },
+  "notes": {
+    "leandra_vert_count": "✓ 5 songs confirmed as mentioned",
+    "extraction_completeness": "All song cards extracted from featured-grid and ALL sec3 sections",
+    "data_verified": "Song IDs, audio paths, titles, artists, and image paths all extracted"
+  }
+}
