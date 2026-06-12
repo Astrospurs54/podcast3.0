@@ -86,19 +86,3 @@ searchInput.addEventListener("input", (e) => {
     resultCardContainer.style.display = hasVisibleResults ? "block" : "none";
 });
 
-// Dropdown menu functionality
-const toggleBtn = document.querySelector(".toggle-Btn");
-const dropdownMenu = document.querySelector(".dropdown-menu");
-
-if (toggleBtn) {
-    toggleBtn.addEventListener("click", function() {
-        dropdownMenu.classList.toggle("show");
-    });
-}
-
-// Close dropdown when clicking outside
-document.addEventListener("click", function(event) {
-    if (dropdownMenu && !dropdownMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
-        dropdownMenu.classList.remove("show");
-    }
-});

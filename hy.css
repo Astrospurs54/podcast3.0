@@ -198,16 +198,21 @@ html{
 
 /*css for search bar ends here*/
 .toggle-Btn{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     right: 1.5rem;
     top: 1.5rem;
-    background: #edf0f19f;
     border-radius: 10px;
-    padding: 10px;
+    padding: 7px;
     cursor: pointer;
     display: none;
+    background:var(--glassdark);
+
+}
+.toggle-Btn i{
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .progress-container{
@@ -717,42 +722,109 @@ body{
 .dropdown-menu{
     display: none;
     width: 40%;
-  z-index: 10;
+  z-index: 10000;
     position: absolute;
-    height: 0;
+    height: 11.5rem;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+    animation: dropdownDisappear ease 1s;
 
 }
-.dropdown-menu.open{
-    height: 240px;
+.dropdown-menu.show{
+    height: 11.5rem;
     padding: 1rem;
-    z-index: 10;
+    z-index: 10000;
     position: absolute;
-
+    opacity: 1;
+    animation: dropdownAppear ease 1s;
+   
 }
+   @keyframes dropdownAppear{
+        from {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+        to{
+            opacity: 1;
+            transform:translateX(0);
+
+        }
+        
+    }   
+      @keyframes dropdownDisappear{
+        from {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        to{
+            opacity: 0;
+            transform:translateX(200px);
+
+        }
+        
+    }   
+    @keyframes dropdownAppearSmall{
+        from {
+            opacity: 0;
+            transform: translateY(-150px);
+        }
+        to{
+            opacity: 1;
+            transform:translateY(0);
+
+        }
+    }
+    @keyframes dropdownDisappearSmall{
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to{
+            opacity: 0;
+            transform:translateY(-150px);
+
+        }
+        
+    }   
 .dropdown-menu li{
     list-style: none;
     padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
 }
 .weblink{
-     color: #000;
-     background: #f3f1f1d2;
-     padding: 14px;
+    
+     background: #00ffff;
+     padding: 5px;
      transition: transform 0.3s ease, box-shadow 0.3s ease;
      border-radius: 20px;
+     margin-top: 20px;
+     width: 140px;
+     height: 40px;
+
 } 
-.weblink:hover {
+.nav{
+margin-top: 10px;
+}
+.weblink a{
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.weblink:hover, .weblink a:hover {
       transform: translateY(-5px);
       box-shadow: 0 20px 30px rgba(51, 50, 50, 0.4);
-      color: #fff;
+         color: #fff;
       background: #000;}
-
+.weblink a:hover{
+    color: #fff;
+}
 .hero-section{
  width: 100%;
  height: 100%;
@@ -954,6 +1026,8 @@ li,a,button{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+  
+   
 }
 .W-text{
     font-size: 35px;
@@ -1433,8 +1507,8 @@ background: var(--glass);
       
        
       }
-    .dropdown-menu.open{
-    height: 240px;
+    .dropdown-menu.show{
+    height:11.5rem;
     padding: 1rem;
     background: #000000c9;
     backdrop-filter: blur(30px);
@@ -1474,6 +1548,19 @@ background: var(--glass);
    .player-info{
     width: 33rem;
    }
+   .nav{
+margin-top: 10px;
+width:8rem;
+}
+.nav a{
+    font-size: 15px;
+}
+.nav a:hover{
+    color: #fff;
+}
+.nav:hover{
+    color: #000
+}
 }
 @media (max-width:768px) {
        nav {
@@ -1509,14 +1596,15 @@ background: var(--glass);
        
       }
       .toggle-Btn{
-        width: 40px;
+        width: 35px;
         display: block;
+         padding: 7px;
         right: 4rem;
         top: 3rem;
-        height: 40px;
+        height: 38px;
       }
-    .dropdown-menu.open{
-    height: 175px;
+    .dropdown-menu.show{
+    height: 11.5rem;
     padding: 1rem;
     background: #000000c9;
      backdrop-filter: blur(100px);
@@ -1574,15 +1662,21 @@ background: var(--glass);
     right:2rem;
     top: 2rem;
    }
- .dropdown-menu.open {
-       right: 2rem;
-       width:200px;
-       top: 5.5rem;
-       background: #000000c9;
-    backdrop-filter: blur(30px);
-      height: 175px;
-       
-      }
+   .dropdown-menu.show{
+    height: 11.5rem;
+    left: 10rem;
+    top: 4.5rem;
+    width: 11rem;
+    z-index: 10000;
+
+   }
+  .dropdown-menu{
+    height: 11.5rem;
+    left: 10rem;
+    top: 4.5rem;
+    width: 11rem;
+
+   }
    .container{
     max-width: 470px;
    }
@@ -1911,7 +2005,23 @@ background: var(--glass);
     margin-right: 1rem;
 }
 
+ .dropdown-menu.show{
+    height: 11.5rem;
+    left: 1rem;
+    top: 1rem;
+    width: 11rem;
+    z-index: 10000;
+    animation: dropdownAppearSmall ease 1s;
 
+   }
+  .dropdown-menu{
+    height: 11.5rem;
+    left: 1rem;
+    top: 1rem;
+    width: 11rem;
+    animation: dropdownDisappearSmall ease 1s;
+
+   }
 
 }
 
@@ -1920,6 +2030,9 @@ background: var(--glass);
         font-size: 30px;
         margin-bottom: 20px;
         
+    }
+   
+       
     }
     .W-text{
         font-size:20px ;
@@ -1933,6 +2046,7 @@ background: var(--glass);
         height: auto;
         width: 90%;
         padding: 0;
+        margin-top:5rem;
     }
     .search-block,
     .search-wrapper,
@@ -1958,11 +2072,7 @@ background: var(--glass);
         height: auto;
         margin-bottom: 10px;
     }
-    .dropdown-menu.open,
-    .dropdown-menu{
-        right: 5rem;
-        top: 1rem;
-    }
+ 
     .artwork-container-sec3{
     height: 98px;
     width: 120px;
@@ -1971,6 +2081,26 @@ background: var(--glass);
 
     .logo-box{
         margin-bottom: 40px;
+        margin-right: 5px;
+    }
+    .dropdown-menu.show{
+        left: 0rem;
+        height: 11.5rem;
+        top: 0rem;
+        width: 11rem;
+    }
+      .dropdown-menu{
+        left: 0rem;
+        height: 11.5rem;
+        top: 0rem;
+        width: 11rem;
+
+    }
+    .toggle-Btn{
+        right: 0rem;
+    }
+    .weblink{
+        width:9rem;
     }
    
     .box{
