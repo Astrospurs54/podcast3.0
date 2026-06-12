@@ -642,5 +642,20 @@
     "result-artist": "Kelvin Momo",
     "result-song": "Teka",
     "id": 92
+  },
+   {
+    "audio": "assets/rec music/recomend/ShaunMusiq, Bassie & LeeMcKrazy - Ngiyakcela (feat. Mashudu).mp3",
+    "image": "assets/pics/recomend/ngiyakcela.webp",
+    "result-artist": "ShaunMusiq",
+    "result-song": "Ngiyakcela",
+    "id": 93
+  },
+  {
+    "audio": "assets/rec music/recomend/Danya Devs - Ola Sbali ft. Mawelele.mp3",
+    "image": "assets/pics/recomend/ola.webp",
+    "result-artist": "Danya Devs",
+    "result-song": "Ola Sbali",
+    "id": 94
   }
+
 ]

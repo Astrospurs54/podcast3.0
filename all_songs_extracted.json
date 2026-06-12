@@ -1,13 +1,5 @@
 {
-  "total_songs": 88,
-  "artists_summary": {
-    "Featured Recommended Tracks": 12,
-    "Mas Musiq": 17,
-    "Kabza De Small": 15,
-    "Aymos": 19,
-    "Leandra Vert": 5,
-    "Kelvin Momo": 20
-  },
+  
   "songs": {
     "Featured Recommended Tracks": [
       {
@@ -663,12 +655,21 @@
         "artist": "Kelvin Momo",
         "audio_path": "assets/rec music/momo/IVY/Kelvin Momo - Teka.mp3",
         "image_path": "assets/pics/sec3/IVY.webp"
+      },
+      {
+        "id": "Ngiyakcela",
+        "title": "Ngiyakcela",
+        "artist": "ShaunMusiq",
+        "audio_path": "assets/rec music/recomend/ShaunMusiq, Bassie & LeeMcKrazy - Ngiyakcela (feat. Mashudu).mp3",
+        "image_path": "assets/pics/recomend/ngiyakcela.webp"
+      },
+       {
+        "id": "ola-sbali",
+        "title": "Ola Sbali",
+        "artist": "Danya Devs",
+        "audio_path": "assets/rec music/recomend/Danya Devs - Ola Sbali ft. Mawelele.mp3",
+        "image_path": "assets/pics/recomend/ola.webp"
       }
     ]
-  },
-  "notes": {
-    "leandra_vert_count": "✓ 5 songs confirmed as mentioned",
-    "extraction_completeness": "All song cards extracted from featured-grid and ALL sec3 sections",
-    "data_verified": "Song IDs, audio paths, titles, artists, and image paths all extracted"
   }
 }
