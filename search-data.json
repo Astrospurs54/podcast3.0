@@ -644,14 +644,14 @@
     "id": 92
   },
    {
-    "audio": "assets/rec music/recomend/ShaunMusiq, Bassie & LeeMcKrazy - Ngiyakcela (feat. Mashudu).mp3",
+    "audio": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/ShaunMusiq%2C%20Bassie%20%26%20LeeMcKrazy%20-%20Ngiyakcela%20(feat.%20Mashudu).mp3",
     "image": "assets/pics/recomend/ngiyakcela.webp",
     "result-artist": "ShaunMusiq",
     "result-song": "Ngiyakcela",
     "id": 93
   },
   {
-    "audio": "assets/rec music/recomend/Danya Devs - Ola Sbali ft. Mawelele.mp3",
+    "audio": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Danya%20Devs%20-%20Ola%20Sbali%20ft.%20Mawelele.mp3",
     "image": "assets/pics/recomend/ola.webp",
     "result-artist": "Danya Devs",
     "result-song": "Ola Sbali",
