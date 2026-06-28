@@ -392,10 +392,10 @@ html{
 
 /* css for section 3 */
 .sec3{
-    width: 100dvw;
-
+    width: 100%;
     margin-top: 150px;
-    padding: 8px 4%;
+
+   
    
        
    
@@ -438,40 +438,26 @@ html{
 }
  .sec3 .first{
     margin-bottom:0px;
+   
 
  }
 .sec3 .second{
     padding-top: 10px;
+      
 }
 .sec3 .last{
     margin-bottom:50px;
+    
 }
 .sec3 .middle{
     margin-bottom:0px;
     padding-top: 10px;
+      
 }
 .sec3 .note{
     text-align: center;
 }
-.private-section .first{
-    margin-bottom:0px;
 
- }
-.private-section .second{
-    padding-top: 10px;
-    margin-bottom: 500px;
-  
-}
-.private-section .last{
-    margin-bottom:50px;
-}
-.private-section .middle{
-    margin-bottom:0px;
-    padding-top: 10px;
-}
-.private-section .note{
-    text-align: center;
-}
 .wrapper{
     display: flex;
     justify-content: start;
@@ -492,6 +478,7 @@ html{
     padding-top: 100px;
     height: auto;
     margin-bottom:200px ;
+    overflow: hidden;
  
 }
 .song-card-sec3{
