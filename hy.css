@@ -1235,10 +1235,60 @@ p.owner{
 
 }
 
+/*CSS FOR ARTIST SELECTOR*/
+.selector-h2{
+    margin-bottom: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+.selector-container{
+    display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      gap: 1em;
+      justify-content: center;
 
+}
+.Artist-selector{
+    background: rgba(10, 10, 10, 0.582) ;
+backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 60px;
+    max-width: 500px;
+    overflow: hidden;
+}
+.Artist-list{
+    list-style: none;
+}
+.Artist-item{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    background: #252525;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Artist-item:hover{
+    background: #3333;
+    transform: translateX(10px);
+    box-shadow: 0 10px 20px rgba(60, 59, 59, 0.2) ;
+}
+.Artist-item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:40px;
+}
+.Artist-name{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 
-
-
+/*CSS FOR ARTIST SELECTOR ENDS HERE*/
 
 
 /*CSS OF MUSIC PLAYER*/
@@ -2610,6 +2660,57 @@ background: var(--glass);
     animation: dropdownDisappearSmall ease 1s;
 
    }
+  .selector-h2{
+    margin-bottom: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.selector-container{
+    display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1em;
+      justify-content: center;
+
+}
+.Artist-selector{
+    background: rgba(10, 10, 10, 0.582) ;
+backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 60px;
+    max-width: 500px;
+    overflow: hidden;
+}
+.Artist-list{
+    list-style: none;
+}
+.Artist-item{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    margin-bottom: 12px;
+    background: #252525;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Artist-item:hover{
+    background: #3333;
+    transform: translateX(10px);
+    box-shadow: 0 10px 20px rgba(60, 59, 59, 0.2) ;
+}
+.Artist-item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:40px;
+}
+.Artist-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 }
 

@@ -121,9 +121,7 @@
                 <div class="box">
                     <img src="assets/pics/artist/mellow and sleazy/1.webp" alt="mellow and sleazy">
                 </div> 
-                <div class="box">
-                    <img src="assets/pics/artist/momo/momo.webp" alt="momo">
-                </div> 
+              
                 <div class="box">
                     <img src="assets/pics/artist/mas musiq/2.webp" alt="mas musiq">
                 </div> 
@@ -151,10 +149,45 @@
 <!--This is a different section of song cards-->
       
         <div class="featured-section">
+          <!--artist selector-->
+<div class="selector-container">
+<div class="Artist-selector">
+  <h2 class="selector-h2">Select Artist</h2>
+  <ul class="Artist-list">
+    <li class="Artist-item" onclick="document.getElementById('mas-musiq').scrollIntoView({behavior: 'smooth'})">
+        <img src="assets/pics/artist/mas musiq/2.webp" alt="mas musiq">
+        <div class="Artist-name">Mas Musiq</div> 
+    </li>
+    <li class="Artist-item" onclick="document.getElementById('Kabza-De-Small').scrollIntoView({behavior: 'smooth'})">
+         <img src="assets/pics/artist/kabza/1.webp" alt="kabza">
+        <div class="Artist-name">Kabza De small</div> 
+    </li>
+     <li class="Artist-item" onclick="document.getElementById('Aymos').scrollIntoView({behavior: 'smooth'})">
+         <img src="assets/pics/artist/aymos/1.webp" alt="aymos">
+        <div class="Artist-name">Aymos</div> 
+    </li>
+     <li class="Artist-item" onclick="document.getElementById('Leandra-Vert').scrollIntoView({behavior: 'smooth'})">
+             <img src="assets/pics/artist/vert/VERT.webp" alt="leandra vert">
+        <div class="Artist-name">Leandra Vert</div> 
+    </li>
+     <li class="Artist-item" onclick="document.getElementById('Kelvin-Momo').scrollIntoView({behavior: 'smooth'})">
+         <img src="assets/pics/artist/momo/momo.webp" alt="momo">
+        <div class="Artist-name">Kelvin Momo</div> 
+    </li>
+    <li class="Artist-item" onclick="document.getElementById('Gaba-Cannal').scrollIntoView({behavior: 'smooth'})">
+          <img src="assets/pics/artist/gaba/gaba1.webp" alt="Gaba Cannal">
+        <div class="Artist-name">Gaba Cannal</div> 
+    </li>
+
+  </ul>
+
+
+</div>
 
     <div class="EQ"><p class="EQ-text">
       Experience our <span class="podcast">New and improved in-built Equaliser </span>and enjoy the best sound quality while listening to your favourite songs. Offering you with the balance between bass and treble suited to the song you are playing. listern to different songs and feel the difference in quality. 
-    </p></div>      
+    </p></div>
+    </div>      
     <h2 class="section-title">Recommended tracks</h2>
     
 <!--working on musical player-->
@@ -585,7 +618,7 @@
 </section>
 <section class="sec3">
 <!--adding artist containers-->
-<div class="gradient-container" id="mas">
+<div class="gradient-container" id="mas-musiq">
         <div class="h1-container">
             <h1 class="artist-sec3">Mas Musiq</h1> 
         </div> 
@@ -1108,7 +1141,7 @@
 
 
 <!--adding other artists-->
-<div class="gradient-container" id="Kabza De Small">
+<div class="gradient-container" id="Kabza-De-Small">
         <div class="h1-container">
             <h1 class="artist-sec3">Kabza De Small</h1> 
         </div> 
@@ -2001,7 +2034,7 @@
 
 
 
-<div class="gradient-container" id="Leandra.Vert">
+<div class="gradient-container" id="Leandra-Vert">
         <div class="h1-container">
             <h1 class="artist-sec3">Leandra Vert</h1> 
         </div> 
