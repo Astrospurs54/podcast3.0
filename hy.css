@@ -1870,7 +1870,7 @@ width:8rem;
     height: 6rem;
     padding: .1rem;
     bottom: 30px;
-    left: 42%;
+    left: 50%;
    
 }
 
@@ -2088,7 +2088,7 @@ background: var(--glass);
     height: 6rem;
     padding: .1rem;
     bottom: 30px;
-    left: 42%;
+    left: 50%;
    
 }
 
@@ -2377,7 +2377,7 @@ width: 180px;
     border: 2px solid var(--glassborderdark);
     position: fixed;
     bottom: 30px;
-    left: 42%;
+    left: 50%;
     transform: translateX(-50%);
     
     z-index: 1000;
@@ -2390,7 +2390,7 @@ width: 180px;
     height: 6rem;
     padding: .1rem;
     bottom: 30px;
-    left: 42%;
+    left: 50%;
    
 }.music-player{
    width: 100%;
@@ -2398,7 +2398,7 @@ width: 180px;
     height: 6rem;
     padding: .1rem;
     bottom: 30px;
-    left: 42%;
+    left: 50%;
    
 }
 
@@ -2508,7 +2508,7 @@ width: 180px;
     height: 6rem;
     padding: .1rem;
     bottom: 30px;
-    left: 42%;
+    left: 50%;
    
 }.music-player{
    width: 100%;
@@ -2516,7 +2516,7 @@ width: 180px;
     height: 6rem;
     padding: .1rem;
     bottom: 30px;
-    left: 42%;
+    left: 50%;
    
 }
 
@@ -2707,9 +2707,19 @@ backdrop-filter: blur(10px);
         margin-bottom: 20px;
         
     }
+
+.music-player.active{
+   width: 100%;
+    max-width: 320px;
+    height: 6rem;
+    padding: .2rem;
+    bottom: 30px;
+    left: 50%;
+   
+}}
    
        
-    }
+    
     .W-text{
         font-size:20px ;
     }
@@ -2799,15 +2809,7 @@ backdrop-filter: blur(10px);
 .song-card{
     height: 10.5rem;
 }
-.music-player{
-   width: 100%;
-    max-width: 320px;
-    height: 6rem;
-    padding: .2rem;
-    bottom: 30px;
-    left: 42%;
-   
-}
+
 
 .player-img-box{
     margin: 0px;
