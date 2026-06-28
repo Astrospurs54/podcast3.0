@@ -31,6 +31,20 @@
         "image_path": "assets/pics/recomend/uwona.webp"
       },
       {
+        "id": "Ngiyakcela",
+        "title": "Ngiyakcela",
+        "artist": "ShaunMusiq",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/ShaunMusiq%2C%20Bassie%20%26%20LeeMcKrazy%20-%20Ngiyakcela%20(feat.%20Mashudu).mp3",
+        "image_path": "assets/pics/recomend/ngiyakcela.webp"
+      },
+       {
+        "id": "ola-sbali",
+        "title": "Ola Sbali",
+        "artist": "Danya Devs",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Danya%20Devs%20-%20Ola%20Sbali%20ft.%20Mawelele.mp3",
+        "image_path": "assets/pics/recomend/ola.webp"
+      },
+      {
         "id": "Yonkeinto",
         "title": "Yonkeinto",
         "artist": "Lastborn",
@@ -113,147 +127,147 @@
         "id": "Ingane-Yomuntu",
         "title": "Ingane Yomuntu",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Ingane Yomuntu.mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20Ingane%20Yomuntu.mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Ubuhle-Bakho",
         "title": "Ubuhle Bakho",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Ubuhle Bakho (feat. Thuli P) (1).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20Ubuhle%20Bakho%20(feat.%20Thuli%20P)%20(1).mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Abafana",
         "title": "Abafana",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Abafana (feat. Chley   KJM-Cornetist) (1).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20Abafana%20(feat.%20Chley%20%20%20KJM-Cornetist)%20(1).mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Anginandaba-Nabo",
         "title": "Anginandaba Nabo",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Anginandaba Nabo (feat. Eemoh).mp3",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20Anginandaba%20Nabo%20(feat.%20Eemoh).mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Lane-Yam",
         "title": "Lane Yam",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - LANE YAM (feat. Nia Pearl, Aymos   Musa Keyz).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20LANE%20YAM%20(feat.%20Nia%20Pearl,%20Aymos%20%20%20Musa%20Keyz).mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Yes-Sir",
         "title": "Yes Sir",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Yes Sir (feat. Mukundi).mp3",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20Yes%20Sir%20(feat.%20Mukundi).mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Groovy",
         "title": "Groovy",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas_Musiq_Groovy_feat_Lawd_Weezy,_KJM_Cornetist_Corry_Da_G.mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas_Musiq_Groovy_feat_Lawd_Weezy%2C_KJM_Cornetist_Corry_Da_G.mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Mali-Ye-Phepha",
         "title": "Mali Ye Phepha",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas_Musiq_Mali_Ye_Phepha_feat_Nhlanhla_Dube_Mlindo_The_Voc.mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas_Musiq_Mali_Ye_Phepha_feat_Nhlanhla_Dube_Mlindo_The_Voc.mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Phanisha",
         "title": "Phanisha",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Phanisha.mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20Phanisha.mp3",
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Jikeleza",
         "title": "Jikeleza",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/L/Mas Musiq - Jikeleza (feat. Nia Pearl   Mawhoo).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/L/Mas%20Musiq%20-%20Jikeleza%20(feat.%20Nia%20Pearl%20%20%20Mawhoo).mp3" ,
         "image_path": "assets/pics/sec3/L.webp"
       },
       {
         "id": "Nini-Nanini",
         "title": "Nini Nanini",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Nini Nannini (feat. Daliwonga   Howard Gomba).mp3",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/N/Mas%20Musiq%20-%20Nini%20Nannini%20(feat.%20Daliwonga%20%20%20Howard%20Gomba).mp3" ,
         "image_path": "assets/pics/sec3/N.webp"
       },
       {
         "id": "Gangnam-Style",
         "title": "Gangnam Style",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Gangnam Style (feat. DJ Maphorisa   Kabza De Sma (1).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/N/Mas%20Musiq%20-%20Gangnam%20Style%20(feat.%20DJ%20Maphorisa%20%20%20Kabza%20De%20Sma%20(1).mp3",
         "image_path": "assets/pics/sec3/N.webp"
       },
       {
         "id": "Nguye-Lo",
         "title": "Nguye Lo",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Nguye Lo (feat. Ami Faku).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/N/Mas%20Musiq%20-%20Nguye%20Lo%20(feat.%20Ami%20Faku).mp3",
         "image_path": "assets/pics/sec3/N.webp"
       },
       {
         "id": "Nanini",
         "title": "Nanini",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Nanini (feat. Acatears).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/N/Mas%20Musiq%20-%20Nanini%20(feat.%20Acatears).mp3",
         "image_path": "assets/pics/sec3/N.webp"
       },
       {
         "id": "Ekhaya",
         "title": "Ekhaya",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Ekhaya (feat. Aymos   Kelvin Momo).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/N/Mas%20Musiq%20-%20Ekhaya%20(feat.%20Aymos%20%20%20Kelvin%20Momo).mp3",
         "image_path": "assets/pics/sec3/N.webp"
       },
       {
         "id": "Ama-Wishi-Wishi",
         "title": "Ama Wishi Wishi",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/N/Mas Musiq - Ama Wishi Wishi (feat. Aymos, Leon Lee   Howard.mp3",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/N/Mas%20Musiq%20-%20Ama%20Wishi%20Wishi%20(feat.%20Aymos%2C%20Leon%20Lee%20%20%20Howard.mp3",
         "image_path": "assets/pics/sec3/N.webp"
       },
       {
         "id": "Woza",
         "title": "Woza",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/B/Mas Musiq - Woza (feat. Eemoh   Dj Maphorisa).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/B/Mas%20Musiq%20-%20Woza%20(feat.%20Eemoh%20%20%20Dj%20Maphorisa).mp3" ,
         "image_path": "assets/pics/sec3/bas.webp"
       },
       {
         "id": "Imali-Yami",
         "title": "Imali Yami",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/B/Mas_Musiq_iMali_yami_feat_DBN_Gogo,_Xolani_Guitars_Lawd_We.mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/B/Mas_Musiq_iMali_yami_feat_DBN_Gogo%2C_Xolani_Guitars_Lawd_We.mp3" ,
         "image_path": "assets/pics/sec3/bas.webp"
       },
       {
         "id": "Ububele",
         "title": "Ububele",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/B/Mas Musiq - Ububele (feat. Lawd Weezy   Thatohatsi).mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/B/Mas%20Musiq%20-%20Ububele%20(feat.%20Lawd%20Weezy%20%20%20Thatohatsi).mp3",
         "image_path": "assets/pics/sec3/bas.webp"
       },
       {
         "id": "Nonchalant",
         "title": "Nonchalant",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/B/Mas Musiq - Nonchalant.mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/B/Mas%20Musiq%20-%20Nonchalant.mp3",
         "image_path": "assets/pics/sec3/bas.webp"
       },
       {
         "id": "As-galavante",
         "title": "As galavante",
         "artist": "Mas Musiq",
-        "audio_path": "assets/rec music/MAS/B/Mas Musiq - As galavante.mp3",
+        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/MAS/B/Mas%20Musiq%20-%20As%20galavante.mp3" ,
         "image_path": "assets/pics/sec3/bas.webp"
       }
     ],
@@ -655,21 +669,71 @@
         "artist": "Kelvin Momo",
         "audio_path": "assets/rec music/momo/IVY/Kelvin Momo - Teka.mp3",
         "image_path": "assets/pics/sec3/IVY.webp"
-      },
+      }   
+    ],
+    "Gaba Cannal" :[
       {
-        "id": "Ngiyakcela",
-        "title": "Ngiyakcela",
-        "artist": "ShaunMusiq",
-        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/ShaunMusiq%2C%20Bassie%20%26%20LeeMcKrazy%20-%20Ngiyakcela%20(feat.%20Mashudu).mp3",
-        "image_path": "assets/pics/recomend/ngiyakcela.webp"
+        "id": "Alright",
+        "title": "Alright",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20Alright.mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
+      },
+        {
+        "id": "Ngikhumbulu-Baba",
+        "title": "Ngikhumbulu Baba",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20Ngikhumbulu%20Baba.mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
+      },
+              {
+        "id": "Emthandayo",
+        "title": "Emthandayo",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20Emthandayo.mp3",
+        "image_path":"assets/pics/sec3/emthandayo.webp"
       },
        {
-        "id": "ola-sbali",
-        "title": "Ola Sbali",
-        "artist": "Danya Devs",
-        "audio_path": "https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Danya%20Devs%20-%20Ola%20Sbali%20ft.%20Mawelele.mp3",
-        "image_path": "assets/pics/recomend/ola.webp"
+        "id": "Alcohol-Abuser",
+        "title": "Alcohol Abuser",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20Alcohol%20Abuser%20(feat.%20Kandybeats%2C%20Mshengu%2C%20Tou%20(1).mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
+      },
+       {
+        "id": "Bawo",
+        "title": "Bawo",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20Bawo.mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
+      },
+      {
+        "id": "Izenzo",
+        "title": "Izenzo",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20Izenzo%20(1).mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
+      },{
+        "id": "Uthuleleni-Thixo",
+        "title": "Uthuleleni Thixo",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20Uthuleleni%20Thixo.mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
+      },
+      {
+        "id": "uMnikelo",
+        "title": "uMnikelo",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba%20Cannal%20-%20uMnikelo.mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
+      },
+      {
+        "id": "Mngani Wami",
+        "title": "Mngani Wami",
+        "artist": "Gaba canna",
+        "audio_path":"https://pub-7c24c5cc04bc4644b4475d0c28e38ba6.r2.dev/Gaba/Gaba_Cannal_-_Mngani_Wami_(Official_Audio)_feat._Mr_Maker_%26_KandyBeats_17822.mp3",
+        "image_path": "assets/pics/sec3/gabasong.webp"
       }
-    ]
+    ]    
   }
 }

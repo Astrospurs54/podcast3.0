@@ -1,5 +1,6 @@
 // Handle song card play buttons
 const songCards = document.querySelectorAll(".song-card");
+let currentlyPlayingCard = null;
 
 songCards.forEach(card => {
     const playButton = card.querySelector('.play-button');
@@ -11,7 +12,22 @@ songCards.forEach(card => {
             // Get song info from the card
             const songTitle = card.querySelector('.song-title').textContent;
             const artistName = card.querySelector('.artist').textContent;
+            const PlayIcon = card.querySelector('.play-Icon');
+
+            //reset previous card to play icon
+             
             
+            if (currentlyPlayingCard && currentlyPlayingCard !== card) {
+               resetCardToPlayIcon(currentlyPlayingCard);
+            }
+            //set this card to pause  icon
+            if (PlayIcon) {
+                PlayIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
+            }
+            currentlyPlayingCard = card;
+
+          
+
             // Play the song using the global music player function
             if (typeof playSongByName === 'function') {
                 playSongByName(songTitle, artistName);
@@ -26,56 +42,10 @@ songCards.forEach(card => {
     }
 });
 
-// Handle contact form
-var field = document.querySelector('textarea');
-if (field) {
-    var backup = field.getAttribute('placeholder');
-    var btn = document.querySelector('.btn');
-    var clear = document.getElementById('clear');
-
-    field.onfocus = function() {
-        this.setAttribute('placeholder', '');
-        this.style.borderColor = ' #333 ';
-        if (btn) btn.style.display = 'block';
-    }
-
-    field.onblur = function() {
-        this.setAttribute('placeholder', backup);
-        this.style.borderColor = ' #aaa ';
-    }
-
-    if (clear) {
-        clear.onclick = function() {
-            if (btn) btn.style.display = 'none';
-            field.value = '';
-        }
-    }
-}
-
-
-
-// Handle contact form
-var field = document.querySelector('textarea');
-if (field) {
-    var backup = field.getAttribute('placeholder');
-    var btn = document.querySelector('.btn');
-    var clear = document.getElementById('clear');
-
-    field.onfocus = function() {
-        this.setAttribute('placeholder', '');
-        this.style.borderColor = ' #333 ';
-        if (btn) btn.style.display = 'block';
-    }
-
-    field.onblur = function() {
-        this.setAttribute('placeholder', backup);
-        this.style.borderColor = ' #aaa ';
-    }
-
-    if (clear) {
-        clear.onclick = function() {
-            if (btn) btn.style.display = 'none';
-            field.value = '';
-        }
+  // helper function to reset a card icon
+  function resetCardToPlayIcon(card) {
+    const PlayIcon = card.querySelector('.play-Icon');
+    if (PlayIcon) {
+        PlayIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 }

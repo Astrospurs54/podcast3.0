@@ -5,24 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact me</title>
     <link rel="stylesheet" href="contact me.css" type="text/css">
+     <script src="https://kit.fontawesome.com/e0245d3b77.js" crossorigin="anonymous"></script>
+  
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <header class="header">
-            <div class="overlay"></div>
-            <div class="content">
+<div class="overlay"></div>
+              
+           
+
+    
+
+
+<div class="wrapper">
+ 
+ <div class="content">
+      <!--contact secion-->
+
                 <h1>Contact me on</h1>
           
-                <a href="https://facebook.com/fortune.macjessie.9/" class="socials"> <img src="assets/facebook.webp" alt="facebook logo" class="image-footer-facebook">    <p>   Astrospurs Macjessie </p></a>
+                
+                    <p class="links"> <a href="https://facebook.com/fortune.macjessie.9/" target="_blank" ><i class="fa-brands fa-facebook" ></i>     Astrospurs Macjessie </p></a>
+            
 
-             <a href="https://www.instagram.com/astrospurs54/" class="socials"><img src="assets/instagram.webp" alt="instagram logo" class="image-footer">  <p> Astrospurs54</p></a>      
-               
-                 <p><span class ="aqua"> Whatsapp </span> :   0995290545</p>
-                 <p><span class ="aqua">    Phone </span> :   0995290545    ,   0885385158</p>
-                 <p><span class ="aqua">   Email </span> :   Fortunemacjessie@gmail.com , Astrospurs55@gmail.com   </p>       
+             
+                    <p class="links"> <a href="https://www.instagram.com/astrospurs54/" target="_blank" ><i class="fa-brands fa-instagram" ></i>Astrospurs54</p></a>
+
+                   
+                     <p class="links"><a href="https://wa.me/265995290545" target="_blank"><i class="fa-brands fa-whatsapp"></i>   0995290545</a></p>
+                
+           
+                 <p class="links"><i class="fa-solid fa-phone"></i>       0995290545 , 0885385158</p>
+
+                 <p class="links"><i class="fa-solid fa-envelope"></i>      fortunemacjessie@gmail.com , astrospurs55@gmail.com   </p>   
+
                  <a href="index.html"> <button class="btn2">home</button></a>
+      </div>
+      <div class="contact-form">
+                    <form action="" method="post" name="contact-form">
+                        <input type="text" name="Name" id="Name" placeholder="Your Full Name" required>
+
+                        <input type="tel" name="Phone" id="Phone" placeholder="Your Phone Number" required>
+
+                        <input type="email" name="Email" id="Email"      placeholder="Email Address">
+
+                        <textarea name="Comment" id="Comment" rows="5" placeholder="Get in touch..." required></textarea>
+
+                        <button type="submit" class="btn2" onclick="sendEmail()">Send Message</button>
+                    </form>
                 </div>
-            </header>
+ </div>    
+    <script src="email.js"></script>   
             
 </body>
 </html>

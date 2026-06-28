@@ -1,4 +1,4 @@
-// Global music player state
+// this js file is for Global music player 
 let songs = [];
 let currentSongIndex = 0;
 let audio = null;
@@ -15,6 +15,8 @@ const rewindBtn = document.getElementById("backward-btn");
 const currentTimeDisplay = document.querySelector(".current-time");
 const durationDisplay = document.querySelector(".duration");
 const musicPlayer = document.querySelector(".music-player");
+const playbtnSec3 = document.getElementById("play-button-sec3");
+const playIconSec3 = document.getElementById("play-Icon-sec3");
   //calling constants of sec3
 
 
@@ -66,7 +68,12 @@ playbtn.addEventListener("click", function() {
     } else {
         audio.pause();
         playIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
-       
+
+        //reset card icon
+        if(currentlyPlayingCard)
+        {
+            resetCardToPlayIcon(currentlyPlayingCard);
+        }
     }
 });
 
@@ -105,12 +112,18 @@ sec3PlayButtons.forEach(button => {
         if (!card) return;
 
         if (loadPlayerSongFromSec3Card(card)) {
-            audio.play();
+            audio.play().then(() => {
+
             playIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
             musicPlayer.classList.add("active");
+        }).catch(err => {
+            console.error("playBack failed:", err);
+        });
         }
     });
 });
+
+
 
 //
 
@@ -124,6 +137,11 @@ rewindBtn.addEventListener("click", function() {
         audio.play();
         playIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
         musicPlayer.classList.add("active");
+
+        //reset old 
+        if(currentlyPlayingCard)   resetCardToPlayIcon(currentlyPlayingCard);
+        // highlight the new card if it exists
+        updateActiveCardHighlight();
     }
 });
 
@@ -132,11 +150,37 @@ forwardBtn.addEventListener("click", function() {
     if (currentSongIndex < songs.length - 1) {
         currentSongIndex++;
         updateSong();
+          //reset old 
+        if(currentlyPlayingCard)   resetCardToPlayIcon(currentlyPlayingCard);
+        // highlight the new card if it exists
+        updateActiveCardHighlight();
         audio.play();
         playIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
         musicPlayer.classList.add("active");
     }
 });
+
+function updateActiveCardHighlight() {
+    //reset all cards first
+    document.querySelectorAll('.song-card').forEach(card => {
+        resetCardToPlayIcon(card);
+    });
+    //find the card matching current song and highlight it
+    const currentTitle = songs[currentSongIndex]["result-song"];
+    const currentArtist = songs[currentSongIndex]["result-artist"];
+
+    const matchingCard = Array.from(document.querySelectorAll('.song-card')).find(card => {
+        const cardTitle = card.querySelector('.song-title')?.textContent.trim() || '';
+        const cardArtist = card.querySelector('.artist')?.textContent.trim() || '';
+        return cardTitle === currentTitle && cardArtist === currentArtist;
+    });
+
+    if (matchingCard) {
+        const PlayIcon = matchingCard.querySelector('.play-Icon');
+        if (PlayIcon) PlayIcon.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        currentlyPlayingCard = matchingCard;
+    }
+}
 
 // Progress slider
 songSlider.addEventListener("input", function() {
@@ -194,3 +238,51 @@ function playSongByName(title, artist) {
         musicPlayer.classList.add("active");
     }
 }
+
+//================================================================LOOP FUNCTIONALITY=================================================
+
+let isLooping = false;
+let currentEndedHandler = null; // Store the current 'ended' event handler  
+const loopBtn = document.getElementById('repeat-btn');
+
+//toogle loop
+
+if (loopBtn){
+    loopBtn.addEventListener("click", () => {
+        isLooping = !isLooping;
+
+        if (isLooping) {  
+            loopBtn.classList.add("active");
+            loopBtn.style.color = "#1db954";}
+        else {
+            loopBtn.classList.remove("active");
+            loopBtn.style.color = "";
+        } 
+        updateEndedListener();      
+    });
+}
+
+
+
+function updateEndedListener() {
+    if (currentEndedHandler) {
+        audio.removeEventListener("ended", currentEndedHandler);
+    }
+    //create new handler
+    currentEndedHandler = () => {
+        if (isLooping) {
+            audio.currentTime = 0;
+            audio.play().catch(err => console.error("Error looping audio:", err));
+        } else {
+            if(typeof playNextSong === "function") {
+                playNextSong();
+            }
+        }   
+    };
+
+
+audio.addEventListener("ended", currentEndedHandler);   
+
+}
+
+updateEndedListener();

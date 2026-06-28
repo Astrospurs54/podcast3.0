@@ -1,3 +1,6 @@
+
+// this script handles the search functionality for the search bar and the display of search results in the music player
+
 const resultTemplate = document.querySelector("[data-result-template]");
 const resultCardContainer = document.querySelector("[data-result-card-container]");
 const searchInput = document.querySelector("[data-search]");
